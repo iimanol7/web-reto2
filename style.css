@@ -1,0 +1,84 @@
+:root{
+    --header-bg-color: #1b1b1b;
+    --header-text-color:white;
+    --body-bg-color: #444444;
+    --body-text-color:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: var(--body-bg-color);
+    color: var(--body-text-color);
+    transition: 0.25s;
+}
+body.light{
+    --body-bg-color: white;
+    --body-text-color:black; 
+    transition: 0.25s;
+}
+
+
+header{
+    background-color: var(--header-bg-color);
+    align-items: center;
+}
+
+
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--header-text-color);
+    transition: 0.25s;
+}
+
+.icon-tema{
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    cursor: pointer;
+}
+
+nav a {
+   text-decoration: none; 
+   color: var(--header-text-color);
+   font-weight: bold;
+   background-color: var(--header-color);
+   padding: 10px 20px;
+   display: block;
+}
+nav li:hover {
+    transition: 0.25s;
+   border-bottom: 3px solid rgb(77, 74, 74);
+}
+nav li{
+    list-style: none;
+ }
+.menu-horizontal{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+
+.menu-vertical{
+    display: none;
+    position: absolute;
+}
+
+
+.prueba{
+    height: 200px;
+    width: 200px;
+    background-color: #1b1b1b;
+    clip-path: polygon(25% 0%, 100% 0%, 73% 100%, 0% 100%);
+}
