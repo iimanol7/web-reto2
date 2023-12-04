@@ -1,8 +1,8 @@
 :root{
     --header-bg-color: #1b1b1b;
     --header-text-color:white;
-    --body-bg-color: #444444;
-    --body-text-color:white;
+    --body-bg-color: rgb(211, 211, 211);
+    --body-text-color:black;
 }
 
 *{
@@ -16,9 +16,9 @@ body{
     color: var(--body-text-color);
     transition: 0.25s;
 }
-body.light{
-    --body-bg-color: white;
-    --body-text-color:black; 
+body.dark{
+    --body-bg-color: #444444;
+    --body-text-color:white; 
     transition: 0.25s;
 }
 
@@ -26,6 +26,7 @@ body.light{
 header{
     background-color: var(--header-bg-color);
     align-items: center;
+    overflow: hidden;
 }
 
 
@@ -36,6 +37,8 @@ header{
     text-decoration: none;
     color: var(--header-text-color);
     transition: 0.25s;
+    width: 70%;
+    margin: auto;
 }
 
 .icon-tema{
@@ -49,13 +52,13 @@ nav a {
    text-decoration: none; 
    color: var(--header-text-color);
    font-weight: bold;
-   background-color: var(--header-color);
+   background-color: var(--header-bg-color);
    padding: 10px 20px;
    display: block;
 }
-nav li:hover {
+nav a:hover {
     transition: 0.25s;
-   border-bottom: 3px solid rgb(77, 74, 74);
+    background-color: rgb(56, 56, 56);
 }
 nav li{
     list-style: none;
@@ -73,12 +76,37 @@ nav li{
 .menu-vertical{
     display: none;
     position: absolute;
+    z-index: 1;
+}
+/* ---------INDEX.HTML--------------- */
+.inicio-main{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 
+.slider{
+    display: flex;
+    width: 400%;
+    height: 450px;
+    animation: slide 16s infinite;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+  
+}
+/* animaciones para el slider de la pagina principal */
+@keyframes slide{
+    0%{transform: translateX(0%);}
+    20%{transform: translateX(0%);}
 
-.prueba{
-    height: 200px;
-    width: 200px;
-    background-color: #1b1b1b;
-    
+    25%{transform: translateX(-25%);}
+    45%{transform: translateX(-25%);}
+
+    50%{transform: translateX(-50%);}
+    70%{transform: translateX(-50%);}
+
+    75%{transform: translate(-75%);}
+    95%{transform: translate(-75%);}
 }
