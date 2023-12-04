@@ -42,10 +42,14 @@ header{
 }
 
 .icon-tema{
-    position: absolute;
+    position: fixed;
     right: 15px;
-    top: 30px;
+    bottom: 30px;
     cursor: pointer;
+    padding: 10px;
+    background-color: #1b1b1b;
+    border-radius: 15px;
+    box-shadow: 0 0 12px gray;
 }
 
 nav a {
@@ -83,6 +87,7 @@ nav li{
     width: 100%;
     margin: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .slider{
@@ -109,4 +114,12 @@ nav li{
 
     75%{transform: translate(-75%);}
     95%{transform: translate(-75%);}
+}
+
+.aaa{
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px black;
 }
