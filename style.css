@@ -1,44 +1,68 @@
 :root{
-    --header-bg-color: #1b1b1b;
-    --header-text-color:white;
-    --body-bg-color: rgb(211, 211, 211);
+    --header-bg-color: rgb(245, 244, 244);
+    --header-text-color:black;
+    --body-bg-color: white ;
     --body-text-color:black;
+    --nav-bg-color:rgb(255, 49, 49);
+    --nav-text-color:white;
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    min-height: 60vh;
 }
 body{
     background-color: var(--body-bg-color);
     color: var(--body-text-color);
     transition: 0.25s;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body.dark{
     --body-bg-color: #444444;
     --body-text-color:white; 
+    --header-bg-color:#272727;
     transition: 0.25s;
 }
-
 
 header{
-    background-color: var(--header-bg-color);
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-areas: 
+    "logo h1 h1"
+    "p nav nav";
+    background-color:  var(--header-bg-color);
     overflow: hidden;
 }
-
-
-.logo a{
+.logo{
+    grid-area: logo;
+    display: grid;
+    place-content: center;
+}
+.titulo{
+    grid-area: h1;  
     display: flex;
-    justify-content: center;
+    align-items: center; 
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 30px;
+}
+nav{
+    display: flex;
     align-items: center;
-    text-decoration: none;
-    color: var(--header-text-color);
-    transition: 0.25s;
-    width: 70%;
-    margin: auto;
+    grid-area: nav;
+    background-color: var(--nav-bg-color);
+    overflow: auto;
+    /* clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%); */
+}
+.poligon{
+    grid-area: p;
+    background-color: var(--header-bg-color);
+    height: 50px;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    margin-left: 30px;
 }
 
 .icon-tema{
@@ -54,33 +78,127 @@ header{
 
 nav a {
    text-decoration: none; 
-   color: var(--header-text-color);
+   color: var(--nav-text-color);
    font-weight: bold;
-   background-color: var(--header-bg-color);
-   padding: 10px 20px;
+   background-color: rgb(255, 49, 49);
+   padding: 16px 20px;
    display: block;
 }
 nav a:hover {
     transition: 0.25s;
-    background-color: rgb(56, 56, 56);
+    background-color:var(--header-bg-color);
+    color: var(--nav-bg-color);
 }
 nav li{
     list-style: none;
  }
 .menu-horizontal{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 80px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .menu-horizontal li:hover .menu-vertical{
     display: block;
 }
 
-
 .menu-vertical{
     display: none;
     position: absolute;
     z-index: 1;
+}
+/* --------FOOTER------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+}
+
+/* Estilo para la parte inferior del pie de página */
+.bottom-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #292A32;
+}
+
+/* Estilo para la parte superior del pie de página */
+.top-footer {
+    background-color: #292A32;
+    display: flex;
+    justify-content: center;
+    padding: 0.625rem;
+    gap: 3.125rem;
+    border-bottom: 1px solid white;
+    margin-top: 5rem
+}
+/* Estilo para la lista de contacto dentro del pie de página */
+.contacto ul li {
+    padding: 0.313rem;
+    display: flex;
+    align-items: center;
+    gap: 0.313rem;
+}
+
+/* Estilo para los enlaces de redes sociales en el pie de página */
+.redes ul li a {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para la lista de redes sociales en el pie de página (Eliminamos los marcadores de la lista) */
+.redes ul {
+    list-style: none;
+}
+/* Estilo para los 2 encabezados del top-footer */
+.top-footer h3 {
+    /* font-weight: bolder; */
+    text-align: center;
+    margin-bottom: 0.625rem;
+    border-bottom: 1px dashed white;
+}
+/* Estilo para todos los enlaces en el pie de página (Les quitamos el subrayado y le cambiamos el color)*/
+footer a {
+    text-decoration: none;
+    color: white;
+}
+/* Estilo para los enlaces en el pie de página cuando pasamos el cursor sobre ellos (se subrayan) */
+footer a:hover {
+    text-decoration: underline;
+}
+.copy-footer {
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width:550px) {
+    .top-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .bottom-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes ul li a p {
+        display: none;
+    }
+
+    .redes ul {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        padding: 0px;
+    }
 }
 /* ---------INDEX.HTML--------------- */
 .inicio-main{
@@ -99,7 +217,6 @@ nav li{
 }
 .slider img{
     width: 100%;
-  
 }
 /* animaciones para el slider de la pagina principal */
 @keyframes slide{
@@ -123,3 +240,4 @@ nav li{
     border-radius: 20px;
     box-shadow: 0 0 6px black;
 }
+
