@@ -4,12 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dhurjati&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Inicio</title>
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +18,9 @@
             <h1>REAL FEDERACION ESPAÑOLA DE BALONMANO</h1>
         </div>
         <div class="poligon"></div>
-        <nav>
+        
+        <nav id="nav">
+            <img src="img/close-menu.png" class="close-menu" id="close-menu">
             <ul class="menu-horizontal">
                 <li><a href="index.html">Inicio</a></li>
                 <li>
@@ -40,23 +39,24 @@
                 <li><a href="noticias.html">Noticias</a></li>
             </ul>
         </nav>
+        <img src="img/open-menu.png" class="open-menu" id="open-menu">
     </header>
-
+    
+    <section class="container-slider">
+        <ul class="slider">
+            <li><img src="img/slider-1.jpg"></li>
+            <li><img src="img/slider-2.jpg"></li>
+            <li><img src="img/slider-3.jpg"></li>
+            <li><img src="img/slider-4.jpg"></li>
+        </ul>
+    </section>
     <main class="inicio-main">
-        <section class="container-slider">
-            <ul class="slider">
-                <li><img src="img/slider-1.jpg"></li>
-                <li><img src="img/slider-2.jpg"></li>
-                <li><img src="img/slider-3.jpg"></li>
-                <li><img src="img/slider-4.jpg"></li>
-            </ul>
-        </section>
 
         <section class="fix-btn">
             <img src="img/luna.png" alt="modo-oscuro" class="icon-tema" id="icon-tema">
         </section>
 
-        <section class="aaa">
+        <section class="aaa a1">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias earum assumenda corrupti delectus, unde,
                 quaerat dolorum molestias nobis distinctio quis numquam inventore fugiat, ratione recusandae magni ex
                 labore quidem omnis eveniet laborum amet tempore itaque. Et saepe porro, unde magni expedita debitis
@@ -82,6 +82,7 @@
                 magnam amet veritatis natus! Optio, nisi, rem delectus officia distinctio magnam exercitationem
                 repudiandae consequatur labore nobis assumenda minus beatae ad!</p>
         </section>
+
 
     </main>
 

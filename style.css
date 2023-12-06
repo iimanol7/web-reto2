@@ -1,62 +1,77 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+
+:root {
     --header-bg-color: rgb(245, 244, 244);
-    --header-text-color:black;
-    --body-bg-color: white ;
-    --body-text-color:black;
-    --nav-bg-color:rgb(255, 49, 49);
-    --nav-text-color:white;
+    --header-text-color: black;
+    --body-bg-color: white;
+    --body-text-color: black;
+    --nav-bg-color: rgb(255, 49, 49);
+    --nav-text-color: white;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-main{
+
+main {
     min-height: 60vh;
+    overflow: hidden;
 }
-body{
+
+main section {
+    padding: 32px 15%;
+}
+
+body {
     background-color: var(--body-bg-color);
     color: var(--body-text-color);
     transition: 0.25s;
     font-family: Arial, Helvetica, sans-serif;
 }
-body.dark{
+
+body.dark {
     --body-bg-color: #444444;
-    --body-text-color:white; 
-    --header-bg-color:#272727;
+    --body-text-color: white;
+    --header-bg-color: #272727;
     transition: 0.25s;
 }
 
-header{
+header {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
-    grid-template-areas: 
-    "logo h1 h1"
-    "p nav nav";
-    background-color:  var(--header-bg-color);
+    grid-template-areas:
+        "logo h1 h1"
+        "p nav nav";
+    background-color: var(--header-bg-color);
+    position: relative;
     overflow: hidden;
 }
-.logo{
+
+.logo {
     grid-area: logo;
     display: grid;
     place-content: center;
 }
-.titulo{
-    grid-area: h1;  
+
+.titulo {
+    grid-area: h1;
     display: flex;
-    align-items: center; 
+    align-items: center;
     font-family: 'Dhurjati', sans-serif;
     font-size: 30px;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     grid-area: nav;
     background-color: var(--nav-bg-color);
-    overflow: auto;
     /* clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%); */
 }
-.poligon{
+
+.poligon {
     grid-area: p;
     background-color: var(--header-bg-color);
     height: 50px;
@@ -65,7 +80,7 @@ nav{
     margin-left: 30px;
 }
 
-.icon-tema{
+.icon-tema {
     position: fixed;
     right: 15px;
     bottom: 30px;
@@ -77,36 +92,108 @@ nav{
 }
 
 nav a {
-   text-decoration: none; 
-   color: var(--nav-text-color);
-   font-weight: bold;
-   background-color: rgb(255, 49, 49);
-   padding: 16px 20px;
-   display: block;
+    text-decoration: none;
+    color: var(--nav-text-color);
+    font-weight: bold;
+    background-color: rgb(255, 49, 49);
+    padding: 16px 20px;
+    display: block;
 }
+
 nav a:hover {
     transition: 0.25s;
-    background-color:var(--header-bg-color);
+    background-color: var(--header-bg-color);
     color: var(--nav-bg-color);
 }
-nav li{
+
+nav li {
     list-style: none;
- }
-.menu-horizontal{
+}
+
+.menu-horizontal {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.menu-horizontal li:hover .menu-vertical{
+
+.menu-horizontal li:hover .menu-vertical {
     display: block;
 }
 
-.menu-vertical{
+.menu-vertical {
     display: none;
     position: absolute;
     z-index: 1;
 }
+
+/* menu para cuando la pantalla sea pequeña */
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+@media screen and (max-width:760px) {
+    .poligon {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .close-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .open-menu {
+        width: 40px;
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 60px;
+        z-index: 2;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px gray;
+        cursor: pointer;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 250px;
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        transition: 1s;
+    }
+
+    .menu-horizontal li:hover .menu-vertical {
+        display: none;
+    }
+
+    .menu-horizontal {
+        flex-direction: column;
+    }
+
+    nav.show {
+        right: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .titulo {
+        font-size: 20px;
+    }
+}
+
 /* --------FOOTER------------- */
 footer {
     display: flex;
@@ -131,8 +218,8 @@ footer {
     padding: 0.625rem;
     gap: 3.125rem;
     border-bottom: 1px solid white;
-    margin-top: 5rem
 }
+
 /* Estilo para la lista de contacto dentro del pie de página */
 .contacto ul li {
     padding: 0.313rem;
@@ -151,6 +238,7 @@ footer {
 .redes ul {
     list-style: none;
 }
+
 /* Estilo para los 2 encabezados del top-footer */
 .top-footer h3 {
     /* font-weight: bolder; */
@@ -158,19 +246,23 @@ footer {
     margin-bottom: 0.625rem;
     border-bottom: 1px dashed white;
 }
+
 /* Estilo para todos los enlaces en el pie de página (Les quitamos el subrayado y le cambiamos el color)*/
 footer a {
     text-decoration: none;
     color: white;
 }
+
 /* Estilo para los enlaces en el pie de página cuando pasamos el cursor sobre ellos (se subrayan) */
 footer a:hover {
     text-decoration: underline;
 }
+
 .copy-footer {
     display: flex;
     align-items: center;
 }
+
 @media screen and (max-width:550px) {
     .top-footer {
         flex-direction: column;
@@ -200,40 +292,66 @@ footer a:hover {
         padding: 0px;
     }
 }
+
 /* ---------INDEX.HTML--------------- */
-.inicio-main{
+.inicio-main {
     width: 100%;
-    margin: auto;
+    margin: 0 0 50px 0;
     overflow: hidden;
     position: relative;
 }
-
-.slider{
+.container-slider{
+    overflow: hidden;
+}
+.slider {
     display: flex;
     width: 400%;
-    height: 75vh;
+    max-height: 100%;
+    height: 480px;
     animation: slide 16s infinite;
     overflow: hidden;
 }
-.slider img{
+
+.slider img {
     width: 100%;
 }
+
 /* animaciones para el slider de la pagina principal */
-@keyframes slide{
-    0%{transform: translateX(0%);}
-    20%{transform: translateX(0%);}
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
 
-    25%{transform: translateX(-25%);}
-    45%{transform: translateX(-25%);}
+    20% {
+        transform: translateX(0%);
+    }
 
-    50%{transform: translateX(-50%);}
-    70%{transform: translateX(-50%);}
+    25% {
+        transform: translateX(-25%);
+    }
 
-    75%{transform: translate(-75%);}
-    95%{transform: translate(-75%);}
+    45% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    70% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translate(-75%);
+    }
+
+    95% {
+        transform: translate(-75%);
+    }
 }
 
-.aaa{
+.aaa {
     width: 50%;
     margin: 10px auto;
     padding: 20px;
@@ -241,3 +359,66 @@ footer a:hover {
     box-shadow: 0 0 6px black;
 }
 
+/* --------REGISTRO.HTML-------------- */
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  0 auto;
+}
+
+.form {
+    background-color: #fff;
+    box-shadow: 0 0 12px black;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.form input{
+    font-size: 15px;
+}
+
+.form-title p {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.form-imputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form fieldset {
+    width: 100%;
+    padding: 15px;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datos-personales-form {
+    display: flex;
+    gap: 5px;
+}
+
+.submit {
+    margin-top: 10px;
+    width: 80%;
+}
+.toggle-pass{
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+}
+.show-pass{
+
+}
