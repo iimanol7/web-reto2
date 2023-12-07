@@ -194,7 +194,7 @@ nav li {
     }
 }
 
-/* --------FOOTER------------- */
+/*----------FOOTER------------- */
 footer {
     display: flex;
     flex-direction: column;
@@ -383,6 +383,7 @@ footer a:hover {
     font-size: 15px;
 }
 
+
 .form-title p {
     padding: 10px;
     font-size: 12px;
@@ -419,6 +420,8 @@ footer a:hover {
     gap: 5px;
     font-size: 12px;
 }
-.show-pass{
 
+#validacion{
+    font-size: 15px;
+    color: red;
 }
