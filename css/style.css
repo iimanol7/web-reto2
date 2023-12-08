@@ -17,7 +17,7 @@
 
 main {
     min-height: 60vh;
-    overflow: hidden;
+    
 }
 
 main section {
@@ -70,6 +70,10 @@ nav {
     background-color: var(--nav-bg-color);
     /* clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%); */
 }
+/* .select{
+    background-color: var(--header-bg-color);
+    color: var(--nav-bg-color);
+} */
 
 .poligon {
     grid-area: p;
@@ -100,14 +104,23 @@ nav a {
     display: block;
 }
 
-nav a:hover {
-    transition: 0.25s;
-    background-color: var(--header-bg-color);
-    color: var(--nav-bg-color);
+nav a::after{
+    content: '';
+    margin: auto;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    display: block;
+    transition: 0.3s;
 }
+
+nav a:hover::after {
+    width: 100%;
+} 
 
 nav li {
     list-style: none;
+    position: relative;
 }
 
 .menu-horizontal {
@@ -126,6 +139,7 @@ nav li {
     position: absolute;
     z-index: 1;
 }
+
 
 /* menu para cuando la pantalla sea pequeña */
 .open-menu,
@@ -359,6 +373,63 @@ footer a:hover {
     box-shadow: 0 0 6px black;
 }
 
+
+/* -------------JORNADAS.HTML----------------- */
+.container-jornadas{
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+.ul-jornadas{
+    position: relative;
+}
+.jornada{
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    opacity: 0;
+    background-color: white;
+    transition: 0.3s;
+}
+.ul-jornadas:first-child{
+    opacity: 1;
+}
+#jornada1{
+    opacity: 1;
+}
+.jornada:target{
+    opacity: 1;
+}
+.partido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.hora-partido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+.jornadas-btn{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+}
+.jornadas-btn a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 13px;
+    background-color: #292A32;
+    border-radius:50% ;
+}
 /* --------REGISTRO.HTML-------------- */
 .form-container {
     display: flex;

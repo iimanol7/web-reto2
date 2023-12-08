@@ -85,3 +85,12 @@ if(document.getElementById('pass-checkbox')){
 
     })
 }
+/*--------------------------------------*/
+// if(document.querySelector('.main-jornadas')){
+//     const li = document.getElementById('jornada1')
+//     const link = document.querySelector('.a')
+  
+//     link.addEventListener('click', (e)=>{
+//         li.style.opacity=0
+//     })
+// }

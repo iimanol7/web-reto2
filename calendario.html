@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Jornadas</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo-liga.png" alt="RFEB" width="80px">
-                <h1>REAL FEDERACION ESPAÑOLA DE BALONMANO</h1>
-            </a>
-            <img src="img/sol.png" alt="modo-claro" class="icon-tema">
+        <a href="index.html" class="logo">
+            <img src="img/logo-liga.png" alt="RFEBM" width="120px">
+        </a>
+        <div class="titulo">
+            <h1>REAL FEDERACION ESPAÑOLA DE BALONMANO</h1>
         </div>
-        <hr>
-        <nav>
+        <div class="poligon"></div>
+
+        <nav id="nav">
+            <img src="img/close-menu.png" class="close-menu" id="close-menu">
             <ul class="menu-horizontal">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html" class="select">Inicio</a></li>
                 <li>
                     <a href="equipos.html">Equipos</a>
                     <ul class="menu-vertical">
@@ -37,13 +39,419 @@
                 <li><a href="noticias.html">Noticias</a></li>
             </ul>
         </nav>
+        <img src="img/open-menu.png" class="open-menu" id="open-menu">
     </header>
 
-    <main>
+    <main class="main-jornadas">
 
+        <section class="container-jornadas">
+            <section class="jornadas">
+                <ul class="ul-jornadas">
+                    <li class="jornada" id="jornada1">
+                        <h3>JORNADA 1</h3>
+                        <p>dia mes hora</p>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p>VS</p>
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                    </li>
+                    <li class="jornada" id="jornada2">
+                        <h3>JORNADA 2</h3>
+                        <p>dia mes hora</p>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p>VS</p>
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                    </li>
+                    <li class="jornada" id="jornada3">
+                        <h3>JORNADA 3</h3>
+                        <p>dia mes hora</p>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p>VS</p>
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                    </li>
+                    <li class="jornada" id="jornada4">
+                        <h3>JORNADA 4</h3>
+                        <p>dia mes hora</p>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p>VS</p>
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                    </li>
+                    <li class="jornada" id="jornada5">
+                        <h3>JORNADA 5</h3>
+                        <p>dia mes hora</p>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p>VS</p>
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                    </li>
+                    <li class="jornada" id="jornada6">
+                        <h3>JORNADA 6</h3>
+                        <p>dia mes hora</p>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p>VS</p>
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                    </li>
+                    <li class="jornada" id="jornada7">
+                        <h3>JORNADA 7</h3>
+                        <p>dia mes hora</p>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p>VS</p>
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                    </li>
+                    <li class="jornada" id="jornada8">
+                        <h3>JORNADA 8</h3>
+                        <p>dia mes hora</p>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p>VS</p>
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                    </li>
+                    <li class="jornada" id="jornada9">
+                        <h3>JORNADA 9</h3>
+                        <p>dia mes hora</p>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p>VS</p>
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                    </li>
+                    <li class="jornada" id="jornada10">
+                        <h3>JORNADA 10</h3>
+                        <p>dia mes hora</p>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p>VS</p>
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                        <div class="partido">
+                            <img src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                            <div class="hora-partido">
+                                <p>12:00</p>
+                                <p></p>VS
+                            </div><img
+                                src="https://images.vexels.com/media/users/3/156928/isolated/preview/6c65c177e94e7554e1fdb0af3038acb7-icono-cuadrado-de-signo-de-interrogacion.png"
+                                width="100px">
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+        <section class="jornadas-btn">
+            <a class="a" href="#jornada1">1</a>
+            <a class="a" href="#jornada2">2</a>
+            <a class="a" href="#jornada3">3</a>
+            <a class="a" href="#jornada4">4</a>
+            <a class="a" href="#jornada5">5</a>
+            <a class="a" href="#jornada6">6</a>
+            <a class="a "href="#jornada7">7</a>
+            <a class="a" href="#jornada8">8</a>
+            <a class="a" href="#jornada9">9</a>
+            <a class="a" href="#jornada10">10</a>
+        </section>
+
+        <section class="fix-btn">
+            <img src="img/luna.png" alt="modo-oscuro" class="icon-tema" id="icon-tema">
+        </section>
     </main>
 
     <footer>
+        <section class="top-footer">
+
+            <div class="contacto">
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li><img src="img/icon-telefono.png" width="25px">+34 915 48 35 58</li>
+                    <li><img src="img/icon-fax.png" width="25px">+34 915 42 70 49</li>
+                    <li><img src="img/icon-mail.png" width="25px"><a href="mailto:rfebm@rfebm.com">rfebm@rfebm.com</a>
+                    </li>
+                    <li><img src="img/icon-ubi.png" width="25px">Ornilla Doctor Kalea, 2, 48004 Bilbo, Bizkaia</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h3>REDES</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/rfebalonmano/?hl=es"><img src="img/icon-ig.png" width="50px">
+                            <p>@rfebalonmano</p>
+                        </a></li>
+                    <li><a
+                            href="https://twitter.com/RFEBalonmano?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                                src="img/icon-twt.png" width="50px">
+                            <p>@RFEBalonmano</p>
+                        </a></li>
+                    <li><a href="https://www.youtube.com/@RFEBM"><img src="img/icon-yt.png" width="50px">
+                            <p>@RFEBM</p>
+                        </a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="bottom-footer">
+            <div class="copy-footer">
+
+                <img src="img/logo-liga.png" alt="RFEVB" width="50px">
+                <p>Copyright RFEBM.</p>
+            </div>
+            <div class="info-footer">
+                | <a href="footer/condiciones-legles.html">Condiciones Legales</a> |
+                <a href="index.html">Inicio</a> |
+            </div>
+        </section>
 
     </footer>
 </body>
