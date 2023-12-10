@@ -35,7 +35,10 @@ body.dark {
     --body-bg-color: #444444;
     --body-text-color: white;
     --header-bg-color: #272727;
+    --nav-bg-color: rgb(245, 244, 244);
+    --nav-text-color:black;
     transition: 0.25s;
+    --header-text-color: white;
 }
 
 header {
@@ -46,7 +49,6 @@ header {
         "p nav nav";
     background-color: var(--header-bg-color);
     position: relative;
-    overflow: hidden;
 }
 
 .logo {
@@ -61,6 +63,7 @@ header {
     align-items: center;
     font-family: 'Dhurjati', sans-serif;
     font-size: 30px;
+    color: var(--header-text-color);
 }
 
 nav {
@@ -70,16 +73,18 @@ nav {
     background-color: var(--nav-bg-color);
     /* clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%); */
 }
-/* .select{
-    background-color: var(--header-bg-color);
-    color: var(--nav-bg-color);
-} */
+.select::after{
+    content: "";
+    width: 100%;
+    display: block;
+}
 
 .poligon {
     grid-area: p;
     background-color: var(--header-bg-color);
-    height: 50px;
     width: 100%;
+    height: auto;
+    z-index: 1;
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     margin-left: 30px;
 }
@@ -98,18 +103,20 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--nav-text-color);
+    background-color: var(--nav-bg-color);
     font-weight: bold;
-    background-color: rgb(255, 49, 49);
     padding: 16px 20px;
     display: block;
 }
+
 
 nav a::after{
     content: '';
     margin: auto;
     height: 3px;
     width: 0%;
-    background-color: white;
+    background-color: var(--nav-text-color);
+    margin: auto;
     display: block;
     transition: 0.3s;
 }
@@ -130,15 +137,16 @@ nav li {
     align-items: center;
 }
 
-.menu-horizontal li:hover .menu-vertical {
-    display: block;
-}
-
 .menu-vertical {
     display: none;
     position: absolute;
     z-index: 1;
+    background: #000;
 }
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
 
 
 /* menu para cuando la pantalla sea pequeña */
@@ -376,12 +384,14 @@ footer a:hover {
 
 /* -------------JORNADAS.HTML----------------- */
 .container-jornadas{
-    padding: 0;
+    padding: 10px;
     width: 100%;
     max-width: 1000px;
     height: 400px;
     margin: 20px auto;
-    border: 1px solid black;
+    background-color: var(--header-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px gray;
 }
 
 .ul-jornadas{
@@ -392,11 +402,8 @@ footer a:hover {
     list-style: none;
     width: 100%;
     opacity: 0;
-    background-color: white;
-    transition: 0.3s;
-}
-.ul-jornadas:first-child{
-    opacity: 1;
+    background-color: var(--header-bg-color);
+    transition: 0.5s;
 }
 #jornada1{
     opacity: 1;
@@ -422,14 +429,56 @@ footer a:hover {
     justify-content: space-between;
     width: 100%;
     max-width: 1000px;
+    background-color: var(--header-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 0px 12px gray;
+
 }
 .jornadas-btn a{
     text-decoration: none;
-    color: white;
+    color: var(--header-bg-color);
     padding: 10px 13px;
-    background-color: #292A32;
-    border-radius:50% ;
+    background-color: var(--header-text-color);
+    border-radius:35% ;
 }
+.jornadas-btn a::before{
+    content: " d";
+    height: 2px;
+    background-color: #292A32;
+    display: block;
+}
+/*-------------NOTICIAS-----------------*/
+
+.container-noticias{
+    display: grid;
+    grid-template-areas: 
+    ". n1 ."
+    "n2 n1 n3"
+    "n2 n4 n3"
+    "n5 n4 n6"
+    "n5 n7 n6"
+    "n8 n7 n9"
+    "n8 . n9"
+    ;
+    place-items: center;
+    gap: 5px;
+}
+.noticia{
+    background-color: gray;
+    width: 100%;
+    height: 400px;
+}
+.noticia1{grid-area: n1;}
+.noticia2{grid-area: n2;}
+.noticia3{grid-area: n3;}
+.noticia4{grid-area: n4;}
+.noticia5{grid-area: n5;}
+.noticia6{grid-area: n6;}
+.noticia7{grid-area: n7;}
+.noticia8{grid-area: n8;}
+.noticia9{grid-area: n9;}
+
+
 /* --------REGISTRO.HTML-------------- */
 .form-container {
     display: flex;

@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Noticias</title>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo-liga.png" alt="RFEB" width="80px">
-                <h1>REAL FEDERACION ESPAÑOLA DE BALONMANO</h1>
-            </a>
-            <img src="img/sol.png" alt="modo-claro" class="icon-tema">
+        <a href="index.html" class="logo">
+            <img src="img/logo-liga.png" alt="RFEBM" width="120px">
+        </a>
+        <div class="titulo">
+            <h1>REAL FEDERACION ESPAÑOLA DE BALONMANO</h1>
         </div>
-        <hr>
-        <nav>
+        <div class="poligon"></div>
+        
+        <nav id="nav">
+            <img src="img/close-menu.png" class="close-menu" id="close-menu">
             <ul class="menu-horizontal">
                 <li><a href="index.html">Inicio</a></li>
                 <li>
@@ -34,16 +36,73 @@
                 </li>
                 <li><a href="calendario.html">Calendario</a></li>
                 <li><a href="clasificacion.html">Clasificacion</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="noticias.html" class="select">Noticias</a></li>
             </ul>
         </nav>
+        <img src="img/open-menu.png" class="open-menu" id="open-menu">
     </header>
 
-    <main>
+    <main class="noticias-main">
+        <section class="container-noticias">
+            <div class="noticia noticia1"> </div>
+            <div class="noticia noticia2"></div>
+            <div class="noticia noticia3"></div>
+            <div class="noticia noticia4"></div>
+            <div class="noticia noticia5"></div>
+            <div class="noticia noticia6"></div>
+            <div class="noticia noticia7"></div>
+            <div class="noticia noticia8"></div>
+            <div class="noticia noticia9"></div>
+        </section>
 
+        <section class="fix-btn">
+            <img src="img/luna.png" alt="modo-oscuro" class="icon-tema" id="icon-tema">
+        </section>
     </main>
 
     <footer>
+        <section class="top-footer">
+
+            <div class="contacto">
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li><img src="img/icon-telefono.png" width="25px">+34 915 48 35 58</li>
+                    <li><img src="img/icon-fax.png" width="25px">+34 915 42 70 49</li>
+                    <li><img src="img/icon-mail.png" width="25px"><a href="mailto:rfebm@rfebm.com">rfebm@rfebm.com</a>
+                    </li>
+                    <li><img src="img/icon-ubi.png" width="25px">Ornilla Doctor Kalea, 2, 48004 Bilbo, Bizkaia</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h3>REDES</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/rfebalonmano/?hl=es"><img src="img/icon-ig.png"
+                                width="50px">
+                            <p>@rfebalonmano</p>
+                        </a></li>
+                    <li><a href="https://twitter.com/RFEBalonmano?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                                src="img/icon-twt.png" width="50px">
+                            <p>@RFEBalonmano</p>
+                        </a></li>
+                    <li><a href="https://www.youtube.com/@RFEBM"><img src="img/icon-yt.png" width="50px">
+                            <p>@RFEBM</p>
+                        </a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="bottom-footer">
+            <div class="copy-footer">
+
+                <img src="img/logo-liga.png" alt="RFEVB" width="50px">
+                <p>Copyright RFEBM.</p>
+            </div>
+            <div class="info-footer">
+                | <a href="footer/condiciones-legles.html">Condiciones Legales</a> |
+                <a href="index.html">Inicio</a> |
+            </div>
+        </section>
 
     </footer>
 </body>
