@@ -596,64 +596,52 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:  0 auto;
+    margin:  30px auto;
+    padding: 0;
 }
 
 .form {
     background-color: #fff;
-    box-shadow: 0 0 12px black;
-    width: 90%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px;
-}
-.form input{
-    font-size: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
 }
 
-
-.form-title p {
-    padding: 10px;
-    font-size: 12px;
-}
-
-.form-imputs {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form fieldset {
+.form-inputs{
     width: 100%;
-    padding: 15px;
+    padding: 0;
 }
 
-.contacto-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.form-inputs input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-
-.datos-personales-form {
-    display: flex;
-    gap: 5px;
+.submit{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-
-.submit {
-    margin-top: 10px;
-    width: 80%;
+.submit:hover{
+    background-color: #ccd;
 }
 .toggle-pass{
-    display: flex;
+    padding: 10px;
+    display: flex; 
     gap: 5px;
-    font-size: 12px;
 }
+
+
 
 #validacion{
     font-size: 15px;
     color: red;
+    text-align: center;
+
 }
