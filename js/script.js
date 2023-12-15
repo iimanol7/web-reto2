@@ -83,7 +83,7 @@ if (document.getElementById('pass-checkbox')) {
             error.innerHTML += "la contraseña debe contener al menos una letra minúscula, una mayúscula y un número <br>"
             esCorrecto = false
         } else if (pass.value !== repeatPass.value) {
-            error.innerHTML += "Las contraseñas no coinciden"
+            error.innerHTML += "Las contraseñas no coinciden <br>"
             esCorrecto = false
         }
 
@@ -111,8 +111,9 @@ if (document.querySelector('.noticias-main')) {
     console.log(linkForm)
     linkForm.addEventListener('click', (e) => {
         e.preventDefault()
+        //tamaño de la ventana cuando se abra
         const opcionesVentana = "width=400, height=500, top=100, left=100, fullscreen=no"
-
+        //abrimos la ventana
         window.open("register.html", "_blank", opcionesVentana);
     })
 
