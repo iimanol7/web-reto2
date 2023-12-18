@@ -406,9 +406,12 @@ footer a:hover {
     background-color: var(--header-bg-color);
     transition: 0.5s;
 }
-#jornada1{
+
+
+.ul-jornadas li:first-child{
     opacity: 1;
 }
+
 
 .jornada:target{
     opacity: 1;
@@ -559,7 +562,22 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
 .jornadas-btn a:hover::before{
     top: -20px;
 }
-/*-------------NOTICIAS-----------------*/
+
+@media screen and (max-width:530px){
+    .jornadas-btn{
+        justify-content: center;
+        border-radius: 0px;
+        box-shadow: 0 0 0;
+        border: solid gray 0.5px;
+    }
+    .container-jornadas{
+        border-radius: 0px;
+        margin-bottom: 0px;
+        box-shadow: 0 0 0px ;
+        border: solid gray 0.5px;
+    }
+}
+/*----------------------------------------------------NOTICIAS.HTML--------------------------------------------------*/
 
 .container-noticias{
     display: grid;
@@ -580,6 +598,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     width: 100%;
     height: 400px;
 }
+
 .noticia1{grid-area: n1;}
 .noticia2{grid-area: n2;}
 .noticia3{grid-area: n3;}
@@ -591,7 +610,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
 .noticia9{grid-area: n9;}
 
 
-/* --------REGISTRO.HTML-------------- */
+/* --------------------------------------------REGISTRO.HTML------------------------------------------------- */
 .form-container {
     display: flex;
     align-items: center;
@@ -644,4 +663,26 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     color: red;
     text-align: center;
 
+}
+/* --------------------------------------------REGISTRO.HTML------------------------------------------------- */
+.container-equipos img{
+    width: 100%;
+}
+.container-equipos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    place-items: center;
+    gap: 20px;
+}
+
+.equipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 6px gray;
+    border-radius: 20px;
+    text-decoration: underline;
+    width: 100%;
+    color: var(--body-text-color);
 }
