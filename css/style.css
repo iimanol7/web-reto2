@@ -7,6 +7,7 @@
     --body-text-color: black;
     --nav-bg-color: rgb(255, 49, 49);
     --nav-text-color: white;
+    --section-bg-color: rgb(250, 250, 250);
 }
 
 * {
@@ -31,14 +32,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 body.dark {
     --body-bg-color: #444444;
     --body-text-color: white;
     --header-bg-color: #272727;
     --nav-bg-color: rgb(245, 244, 244);
     --nav-text-color:black;
-    transition: 0.25s;
     --header-text-color: white;
+    --section-bg-color: #2a2a2a;
+    transition: 0.25s;
 }
 
 header {
@@ -670,7 +674,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
 }
 .container-equipos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
     place-items: center;
     gap: 20px;
 }
@@ -685,4 +689,10 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     text-decoration: underline;
     width: 100%;
     color: var(--body-text-color);
+    transition: 0.3s;
+    background-color: var(--section-bg-color);
+}
+
+.equipo:hover{
+    transform: scale(1.1);
 }
