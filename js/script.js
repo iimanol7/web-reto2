@@ -63,27 +63,27 @@ if (document.getElementById('pass-checkbox')) {
         let esCorrecto = true
         //compruebo si los campos de nombre y apellido estan vacios
         if (name.value.length <= 0 || surname.value.length <= 0) {
-            error.innerHTML = "Los campos de Nombre y Apellido no pueden estar vacios <br>"
+            error.innerHTML = "Los campos de Nombre y Apellido no pueden estar vacios. <br>"
             esCorrecto = false
         }
         //(expresión regular para validar el formato del email)
         const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
         //coMpruebo que el email esta correcto
         if (!regexEmail.test(mail.value)) {
-            error.innerHTML += "El correo no es valido <br>"
+            error.innerHTML += "El correo no es valido. <br>"
             esCorrecto = false
         }
         //(Expresión regular para comprobar el formato de la contraseña)
         const regexPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/
         //compruebo que la contraseña tenga mas de 6 caracteres
         if (pass.value.length < 6) {
-            error.innerHTML += "La contraseña debe contener al menos 6 caracteres <br>"
+            error.innerHTML += "La contraseña debe contener al menos 6 caracteres. <br>"
             esCorrecto = false
         } else if (!regexPass.test(pass.value)) {
-            error.innerHTML += "la contraseña debe contener al menos una letra minúscula, una mayúscula y un número <br>"
+            error.innerHTML += "la contraseña debe contener al menos una letra minúscula, una mayúscula y un número. <br>"
             esCorrecto = false
         } else if (pass.value !== repeatPass.value) {
-            error.innerHTML += "Las contraseñas no coinciden <br>"
+            error.innerHTML += "Las contraseñas no coinciden. <br>"
             esCorrecto = false
         }
 

@@ -231,12 +231,12 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #292A32;
+    background-color:  #272727;
 }
 
 /* Estilo para la parte superior del pie de página */
 .top-footer {
-    background-color: #292A32;
+    background-color:  #272727;
     display: flex;
     justify-content: center;
     padding: 0.625rem;
@@ -385,10 +385,14 @@ footer a:hover {
 
 
 /* --------------------------------------------------JORNADAS.HTML------------------------------------------------------ */
+
+.main-jornadas{
+    padding: 10px 0  80px;
+}
 .container-jornadas{
     padding: 10px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     height: 400px;
     margin: 20px auto;
     background-color: var(--header-bg-color);
@@ -405,6 +409,7 @@ footer a:hover {
     width: 100%;
     opacity: 0;
     background-color: var(--header-bg-color);
+    padding: 20px;
     transition: 0.5s;
 }
 
@@ -435,7 +440,8 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
+    padding: 22px;
     background-color: var(--header-bg-color);
     border-radius: 10px;
     box-shadow: 0 0px 12px gray;
@@ -458,7 +464,7 @@ footer a:hover {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.6s ease;
+    transition: 0.4s ease;
 }
 .jornadas-btn .a2::before{
     content: "J2";
@@ -469,7 +475,7 @@ footer a:hover {
     left: 0;
     right: 0;
 clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.6s ease;
+     transition: 0.4s ease;
 }
 .jornadas-btn .a3::before{
     content: "J3";
@@ -480,7 +486,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     left: 0;
     right: 0;
 clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.6s ease;
+     transition: 0.4s ease;
 }
 .jornadas-btn .a4::before{
     content: "J4";
@@ -491,7 +497,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     left: 0;
     right: 0;
 clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.6s ease;
+     transition: 0.4s ease;
 }
 .jornadas-btn .a5::before{
     content: "J5";
@@ -502,7 +508,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     left: 0;
     right: 0;
 clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.6s ease;
+     transition: 0.4s ease;
 }
 .jornadas-btn .a6::before{
     content: "J6";
@@ -513,7 +519,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     left: 0;
     right: 0;
 clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.6s ease;
+     transition: 0.4s ease;
 }
 .jornadas-btn .a7::before{
     content: "J7";
@@ -524,7 +530,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     left: 0;
     right: 0;
 clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.6s ease;
+     transition: 0.4s ease;
 }
 .jornadas-btn .a8::before{
     content: "J8";
@@ -535,7 +541,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     left: 0;
     right: 0;
 clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.6s ease;
+     transition: 0.4s ease;
 }
 .jornadas-btn .a9::before{
     content: "J9";
@@ -546,7 +552,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     left: 0;
     right: 0;
 clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.6s ease;
+     transition: 0.4s ease;
 }
 .jornadas-btn .a10::before{
     content: "J10";
@@ -557,7 +563,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     left: 0;
     right: 0;
 clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.6s ease;
+     transition: 0.4s ease;
 }
 
 .jornadas-btn a:hover::before{
@@ -582,6 +588,8 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
 
 .noticia-main img{
     width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 .noticias-main{
     padding: 35px 15%;
@@ -593,19 +601,22 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     border-radius: 20px;
     padding: 2%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 100px;
+    grid-template-areas: 
+    "h2 img"
+    "txt img";
+    padding: 4%;
+    background-color: var(--section-bg-color);
 }
 
 .titulo-noticia{
-    grid-row: 1/2;
+    grid-area: h2;
 }
 .texto-noticia{
-    grid-row: 2/3;
+    grid-area: txt ;
 }
 
 .foto-noticia{
-    grid-row: 1/-1;
+    grid-area: img;
 }
 
 .container-noticias{
@@ -684,8 +695,13 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     display: flex; 
     gap: 5px;
 }
-
-
+.form fieldset > legend{
+    font-size: 14px;
+    margin-left: 5px;
+    background-color: rgb(240, 240, 240);
+    padding: 4px;
+    border-radius: 3px;
+}
 
 #validacion{
     font-size: 15px;
@@ -693,12 +709,15 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     text-align: center;
 
 }
-/* --------------------------------------------REGISTRO.HTML------------------------------------------------- */
+
+/* --------------------------------------------EQUIPOS.XML------------------------------------------------- */
 .container-equipos img{
     width: 100%;
 }
 .container-equipos{
+    width: 70%;
     display: grid;
+    margin: 50px auto;
     grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
     place-items: center;
     gap: 20px;

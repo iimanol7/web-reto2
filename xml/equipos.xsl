@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-  <xsl:template match="/equipos">
+  <xsl:template match="/">
     <html>
       <head>
         <meta charset="UTF-8"/>
@@ -62,12 +62,12 @@
         </header>
 
         <!-- ________________________________contenido-main_________________________________ -->
-        <main class="inicio-main">
+        <main class="equipos-main">
 
         <!-- ________________________________contenido-XML_________________________________ -->
 
           <section class="container-equipos">
-            <xsl:for-each select="equipo">
+            <xsl:for-each select="//equipo">
               <a class="equipo" id="{@id}" href="{@ruta}">
                 <h2><xsl:value-of select="nombre"/></h2>
                 <img src="{escudo}" alt=""/>
@@ -131,7 +131,7 @@
           </section>
           <section class="bottom-footer">
             <div class="copy-footer">
-              <!-- <img src="img/logo-liga" alt="RFEVB" width="50px"/> -->
+              <img src="img/logo-liga.png" alt="RFEVB" width="50px"/> 
               <p>Copyright RFEBM.</p>
             </div>
             <div class="info-footer">
