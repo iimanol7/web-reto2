@@ -13,7 +13,7 @@
         <xs:element name="imagen" type="xs:string"/>
         <xs:element name="nombre" type="xs:string"/>
         <xs:element name="apellidos" type="xs:string"/>
-        <xs:element name="edad" type="xs:integer"/>
+        <xs:element name="dorsal" type="xs:integer"/>
       </xs:sequence>
       <xs:attribute name="tipo" type="xs:string" use="required"/>
     </xs:complexType>

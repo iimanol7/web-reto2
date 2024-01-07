@@ -6,42 +6,42 @@
         <imagen>entrenador.jpg</imagen>
         <nombre>nombre</nombre>
         <apellidos>apellidos</apellidos>
-        <edad>56</edad>
+        <dorsal>0</dorsal>
     </componente>
 
     <componente tipo="jugador">
         <imagen>jugador.jpg</imagen>
         <nombre>nombre</nombre>
         <apellidos>apellidos</apellidos>
-        <edad>27</edad>
+        <dorsal>27</dorsal>
     </componente>
 
     <componente tipo="jugador">
         <imagen>jugador.jpg</imagen>
         <nombre>nombre</nombre>
         <apellidos>apellidos</apellidos>
-        <edad>27</edad>
+        <dorsal>27</dorsal>
     </componente>
 
     <componente tipo="jugador">
         <imagen>jugador.jpg</imagen>
         <nombre>nombre</nombre>
         <apellidos>apellidos</apellidos>
-        <edad>27</edad>
+        <dorsal>27</dorsal>
     </componente>
 
     <componente tipo="jugador">
         <imagen>jugador.jpg</imagen>
         <nombre>nombre</nombre>
         <apellidos>apellidos</apellidos>
-        <edad>27</edad>
+        <dorsal>27</dorsal>
     </componente>
 
     <componente tipo="jugador">
         <imagen>jugador.jpg</imagen>
         <nombre>nombre</nombre>
         <apellidos>apellidos</apellidos>
-        <edad>27</edad>
+        <dorsal>27</dorsal>
     </componente>
 
 </equipo>

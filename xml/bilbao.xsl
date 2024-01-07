@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<!-- definimos la key para diferenciar los tipos de componentes del equipo (entrenador y jugador) -->
+  <xsl:key name="tipo" match="componente" use="@tipo"/>
   <xsl:template match="/">
   <html>
     <head>
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link rel="stylesheet" href="../css/style.css"/>
-      <title>Equipos</title>
+      <title>Bilbao</title>
       <script src="js/script.js" defer=""></script>
     </head>
     <body>
@@ -50,28 +52,37 @@
       </header>
 
       <!-- ________________________________contenido-main_________________________________ -->
-      <main class="equipos-main">
+      <main class="bilbao-main">
 
+        <section class="cabecera-equipo">
+          <div class="cabecera-img"><img src="../img/bilbao.png"/></div>
+          <h1>BILBAO</h1>
+        </section>
       <!-- ________________________________contenido-XML_________________________________ -->
 
-       <section>
-        <xsl:for-each select="//componente">
-        
-        <div class="jugadores">
-          <img src="../img/{imagen}" width="50px"/>
-          <h2><xsl:value-of select="nombre"/></h2>
-          <h3><xsl:value-of select="apellidos"/></h3>
-          <h4><xsl:value-of select="edad"/></h4>
-        </div>
+      <h2>Entrenador</h2>
+      <section class="entrenadores">
+        <xsl:for-each select="key('tipo' , 'entrenador')">
+          <div class="entrenador">
+            <div class="img-componente"><img src="../img/{imagen}"/></div>
+            <div class="nombre-componente"><h3><xsl:value-of select="nombre"/></h3><h3><xsl:value-of select="apellidos"/></h3></div>
+          </div>
+        </xsl:for-each>
+       </section>
 
+       <h2>Jugadores</h2>
+       <section class="jugadores">
+        
+        <xsl:for-each select="key('tipo' , 'jugador')">
+          <div class="jugador">
+          <div class="img-componente"><img src="../img/{imagen}"/></div>
+          <div class="nombre-componente"><h3><xsl:value-of select="nombre"/></h3><h3><xsl:value-of select="apellidos"/></h3></div>
+          <div class="dorsal-componente"><xsl:value-of select="dorsal"/></div>
+        </div>
         </xsl:for-each>
        </section>
 
       <!-- ______________________________________________________________________________ -->
-
-        <section class="fix-btn">
-          <img src="../img/luna.png" alt="modo-oscuro" class="icon-tema" id="icon-tema"/>
-        </section>
       </main>
 
 
