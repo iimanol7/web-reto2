@@ -27,24 +27,12 @@
               <li>
                 <a href="equipos.xml" class="select">Equipos</a>
                 <ul class="menu-vertical">
-                  <li>
-                    <a href="#">equipo</a>
-                  </li>
-                  <li>
-                    <a href="#">equipo</a>
-                  </li>
-                  <li>
-                    <a href="#">equipo</a>
-                  </li>
-                  <li>
-                    <a href="#">equipo</a>
-                  </li>
-                  <li>
-                    <a href="#">equipo</a>
-                  </li>
-                  <li>
-                    <a href="#">equipo</a>
-                  </li>
+                  <li><a href="xml/bilbao.xml">Bilbao</a></li>
+                  <li><a href="xml/barcelona.xml">Barcelona</a></li>
+                  <li><a href="xml/madrid.xml">Madrid</a></li>
+                  <li><a href="xml/zaragoza.xml">Zaragoza</a></li>
+                  <li><a href="xml/salamanca.xml">Salamanca</a></li>
+                  <li><a href="xml/sevilla.xml">Sevilla</a></li>
                 </ul>
               </li>
               <li>
@@ -68,9 +56,9 @@
 
           <section class="container-equipos">
             <xsl:for-each select="//equipo">
-              <a class="equipo" id="{@id}" href="{@ruta}">
+              <a class="equipo" id="{@id}" href="xml/{@ruta}">
                 <h2><xsl:value-of select="nombre"/></h2>
-                <img src="{escudo}" alt=""/>
+                <img src="img/{escudo}" alt=""/>
               </a>
             </xsl:for-each>
           </section>

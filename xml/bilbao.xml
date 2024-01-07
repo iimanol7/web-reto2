@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bilbao.xsl"?>
+<equipo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bilbao.xsd">
+
+    <componente tipo="entrenador">
+        <imagen>entrenador.jpg</imagen>
+        <nombre>nombre</nombre>
+        <apellidos>apellidos</apellidos>
+        <edad>56</edad>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>nombre</nombre>
+        <apellidos>apellidos</apellidos>
+        <edad>27</edad>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>nombre</nombre>
+        <apellidos>apellidos</apellidos>
+        <edad>27</edad>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>nombre</nombre>
+        <apellidos>apellidos</apellidos>
+        <edad>27</edad>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>nombre</nombre>
+        <apellidos>apellidos</apellidos>
+        <edad>27</edad>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>nombre</nombre>
+        <apellidos>apellidos</apellidos>
+        <edad>27</edad>
+    </componente>
+
+</equipo>

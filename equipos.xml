@@ -1,28 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="xml/equipos.xsl"?>
 <equipos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xml/equipos.xsd">
-    <equipo id="equipo1" ruta="equipo/bilbao.xml">
+
+    <equipo id="equipo1" ruta="bilbao.xml">
         <nombre>Bilbao</nombre>
-        <escudo>img/bilbao.png</escudo>
+        <escudo>bilbao.png</escudo>
     </equipo>
-    <equipo id="equipo2" ruta="equipo/barcelona.xml">
+    <equipo id="equipo2" ruta="barcelona.xml">
         <nombre>Barcelona</nombre>
-        <escudo>img/barcelona.png</escudo>
+        <escudo>barcelona.png</escudo>
     </equipo>
-    <equipo id="equipo3" ruta="equipo/madrid.xml">
+    <equipo id="equipo3" ruta="madrid.xml">
         <nombre>Madrid</nombre>
-        <escudo>img/madrid.png</escudo>
+        <escudo>madrid.png</escudo>
     </equipo>
-    <equipo id="equipo4" ruta="equipo/zaragoza.xml">
+    <equipo id="equipo4" ruta="zaragoza.xml">
         <nombre>Zaragoza</nombre>
-        <escudo>img/zaragoza.png</escudo>
+        <escudo>zaragoza.png</escudo>
     </equipo>
-    <equipo id="equipo5" ruta="equipo/salamanca.xml">
+    <equipo id="equipo5" ruta="salamanca.xml">
         <nombre>Salamanca</nombre>
-        <escudo>img/salamanca.png</escudo>
+        <escudo>salamanca.png</escudo>
     </equipo>
-    <equipo id="equipo6" ruta="equipo/sevilla.xml">
+    <equipo id="equipo6" ruta="sevilla.xml">
         <nombre>Sevilla</nombre>
-        <escudo>img/sevilla.png</escudo>
+        <escudo>sevilla.png</escudo>
     </equipo>
+
 </equipos>
