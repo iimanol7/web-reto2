@@ -1,1 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="estilo-equipo.xsl"?>
+<equipo nombre="SEVILLA" escudo="../img/sevilla.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
+
+    <componente tipo="entrenador">
+        <imagen>entrenador.jpg</imagen>
+        <nombre>Mariano </nombre>
+        <apellidos>Rajoy</apellidos>
+        <posicion>null</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Lara </nombre>
+        <apellidos>González </apellidos>
+        <posicion>Portera</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Maitane </nombre>
+        <apellidos>Etxeberria </apellidos>
+        <posicion>Lateral Izquierdo</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Amaia </nombre>
+        <apellidos>González </apellidos>
+        <posicion>Lateral Derecho</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Jennifer </nombre>
+        <apellidos>Gutiérrez</apellidos>
+        <posicion>Extremo Izquierda</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Anna </nombre>
+        <apellidos>Montañana </apellidos>
+        <posicion>Extremo Derecha</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Mireya </nombre>
+        <apellidos>González </apellidos>
+        <posicion>Pivote</posicion>
+    </componente>
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Ester </nombre>
+        <apellidos>Somaza </apellidos>
+        <posicion>Central</posicion>
+    </componente>
+    
+</equipo>

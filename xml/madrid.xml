@@ -1,1 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="estilo-equipo.xsl"?>
+<equipo nombre="MADRID" escudo="../img/madrid.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
+
+    <componente tipo="entrenador">
+        <imagen>entrenador.jpg</imagen>
+        <nombre>Beñat </nombre>
+        <apellidos>Arnaiz </apellidos>
+        <posicion>null</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Alba </nombre>
+        <apellidos>Sánchez </apellidos>
+        <posicion>Portera</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Ane </nombre>
+        <apellidos>Encina</apellidos>
+        <posicion>Lateral Izquierdo</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Estitxu </nombre>
+        <apellidos>Berasategi</apellidos>
+        <posicion>Lateral Derecho</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Paula </nombre>
+        <apellidos>García </apellidos>
+        <posicion>Extremo Izquierda</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Ana </nombre>
+        <apellidos>Arozamena </apellidos>
+        <posicion>Extremo Derecha</posicion>
+    </componente>
+
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Maddi </nombre>
+        <apellidos>Bengoetxea </apellidos>
+        <posicion>Pivote</posicion>
+    </componente>
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Silvia </nombre>
+        <apellidos>Arderíus </apellidos>
+        <posicion>Central</posicion>
+    </componente>
+    
+</equipo>

@@ -1,47 +1,60 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="bilbao.xsl"?>
-<equipo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bilbao.xsd">
+<?xml-stylesheet type="text/xsl" href="estilo-equipo.xsl"?>
+<equipo nombre="BILBAO" escudo="../img/bilbao.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
 
     <componente tipo="entrenador">
         <imagen>entrenador.jpg</imagen>
-        <nombre>nombre</nombre>
-        <apellidos>apellidos</apellidos>
-        <dorsal>0</dorsal>
+        <nombre>Garazi</nombre>
+        <apellidos>Arrumbarrena</apellidos>
+        <posicion>null</posicion>
     </componente>
 
     <componente tipo="jugador">
         <imagen>jugador.jpg</imagen>
-        <nombre>nombre</nombre>
-        <apellidos>apellidos</apellidos>
-        <dorsal>27</dorsal>
+        <nombre>Carmen</nombre>
+        <apellidos>Campos</apellidos>
+        <posicion>Portera</posicion>
     </componente>
 
     <componente tipo="jugador">
         <imagen>jugador.jpg</imagen>
-        <nombre>nombre</nombre>
-        <apellidos>apellidos</apellidos>
-        <dorsal>27</dorsal>
+        <nombre>Ángelica</nombre>
+        <apellidos>Buenache</apellidos>
+        <posicion>Lateral Izquierdo</posicion>
     </componente>
 
     <componente tipo="jugador">
         <imagen>jugador.jpg</imagen>
-        <nombre>nombre</nombre>
-        <apellidos>apellidos</apellidos>
-        <dorsal>27</dorsal>
+        <nombre>Laura</nombre>
+        <apellidos>Gil</apellidos>
+        <posicion>Lateral Derecho</posicion>
     </componente>
 
     <componente tipo="jugador">
         <imagen>jugador.jpg</imagen>
-        <nombre>nombre</nombre>
-        <apellidos>apellidos</apellidos>
-        <dorsal>27</dorsal>
+        <nombre>Sara</nombre>
+        <apellidos>Higuero</apellidos>
+        <posicion>Extremo Izquierda</posicion>
     </componente>
 
     <componente tipo="jugador">
         <imagen>jugador.jpg</imagen>
-        <nombre>nombre</nombre>
-        <apellidos>apellidos</apellidos>
-        <dorsal>27</dorsal>
+        <nombre>Ángela</nombre>
+        <apellidos>Montejo</apellidos>
+        <posicion>Extremo Derecha</posicion>
     </componente>
 
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Celia</nombre>
+        <apellidos>Acuña</apellidos>
+        <posicion>Pivote</posicion>
+    </componente>
+    <componente tipo="jugador">
+        <imagen>jugador.jpg</imagen>
+        <nombre>Nerea</nombre>
+        <apellidos>Pozo</apellidos>
+        <posicion>Central</posicion>
+    </componente>
+    
 </equipo>
