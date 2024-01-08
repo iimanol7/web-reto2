@@ -94,7 +94,7 @@ nav {
     padding: 10px;
     background-color: #1b1b1b;
     border-radius: 15px;
-    box-shadow: 0 0 12px white;
+    box-shadow: 0 0 6px white;
 }
 
 nav a {
@@ -629,21 +629,31 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     "txt img";
     padding: 4%;
     background-color: var(--section-bg-color);
+    gap: 20px;
 }
 
 .titulo-noticia{
     grid-area: h2;
-    margin-bottom: 20px;
-    padding-right:50px;
+
 }
 .texto-noticia{
     grid-area: txt ;
-    text-align: justify;
-    padding-right:50px;
+
 }
 
 .foto-noticia{
     grid-area: img;
+}
+
+/* estilos cuando la pantalla es mas pequeña */
+@media screen and (max-width:1100px) {
+    .noticia-main{
+        grid-template-areas: 
+        "img img"
+        "h2 h2"
+        "txt txt"
+        ;
+    }
 }
 
 .container-noticias{
@@ -753,6 +763,7 @@ section.visible{
     top: 0;
     right: 0;
     cursor: pointer;
+    filter: drop-shadow(0 0 6px white);
 }
 
 #validacion{
