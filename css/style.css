@@ -327,7 +327,7 @@ footer a:hover {
 }
 .slider {
     display: flex;
-    width: 400%;
+    width: 400vw;
     max-height: 100%;
     height: 480px;
     animation: slide 16s infinite;
@@ -694,13 +694,18 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     display: flex; 
     gap: 5px;
 }
+
+.form fieldset {
+    padding: 10px;
+    border: 0.5px rgb(153, 152, 152) solid;
+
+}
+
 .form fieldset > legend{
     font-size: 14px;
-    margin-left: 5px;
     background-color: rgb(240, 240, 240);
     padding: 4px;
     border-radius: 3px;
-    
 }
 
 #validacion{
@@ -784,6 +789,10 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     margin-bottom: 100px;
 }
 
+.nombre-componente{
+    display: flex;
+    gap: 5px;
+}
 
 
 

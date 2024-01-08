@@ -60,7 +60,7 @@
         </section>
       <!-- ________________________________contenido-XML_________________________________ -->
 
-      <h2>Entrenador</h2>
+      <h2>ENTRENADOR</h2>
       <section class="entrenadores">
         <xsl:for-each select="key('tipo' , 'entrenador')">
           <div class="entrenador">
@@ -70,7 +70,7 @@
         </xsl:for-each>
        </section>
 
-       <h2>Jugadores</h2>
+       <h2>JUGADORAS</h2>
        <section class="jugadores">
         
         <xsl:for-each select="key('tipo' , 'jugador')">
