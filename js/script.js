@@ -50,6 +50,7 @@ if (document.getElementById('pass-checkbox')) {
 
     //validamos los campos
     const form = document.getElementById('form')
+    const formSection = document.getElementById('form-container')
     const mail = document.getElementById('email')
     const error = document.getElementById('validacion')
     const name = document.getElementById('name')
@@ -97,24 +98,28 @@ if (document.getElementById('pass-checkbox')) {
             surname.value = ""
             mail.value = ""
             pass.value = ""
-            //Redirigo al usuario a la pagina de INICIO
-            window.close()
+            //Cierro el formulario
+            formSection.classList.remove('visible')
         }
 
     })
 }
 
 /*-------------------------ABRIR FORMULARIO DE REGISRTO----------------------*/
-if (document.querySelector('.noticias-main')) {
+if (document.querySelector('#link-form')) {
 
     const linkForm = document.getElementById('link-form')
-    console.log(linkForm)
+    const form = document.getElementById('form-container')
+    const closeForm = document.getElementById('close-form')
+    console.log(form)
     linkForm.addEventListener('click', (e) => {
         e.preventDefault()
-        //tamaño de la ventana cuando se abra
-        const opcionesVentana = "width=400, height=500, top=100, left=100, fullscreen=no"
-        //abrimos la ventana
-        window.open("register.html", "_blank", opcionesVentana);
+        //hacemos visible el formulario
+        form.classList.add('visible')
+    })
+    closeForm.addEventListener('click', function(){
+        form.classList.remove('visible')
     })
 
 }
+

@@ -18,7 +18,7 @@
             <h1>REAL FEDERACION ESPAÑOLA DE BALONMANO</h1>
         </div>
         <div class="poligon"></div>
-        
+
         <nav id="nav">
             <img src="img/close-menu.png" class="close-menu" id="close-menu">
             <ul class="menu-horizontal">
@@ -42,13 +42,46 @@
         <img src="img/open-menu.png" class="open-menu" id="open-menu">
     </header>
 
+ <!-- FORMULARIO OCULTO (EN UN PRINCIPIO) -->
+ <section class="form-container" id="form-container">
+    <form class="form" id="form">
+        <img src="img/close-menu.png" class="close-form" id="close-form" width="30px">
+        <section class="form-inputs">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <input type="text" placeholder="Nombre" id="name">
+                <input type="text" placeholder="Apellidos" id="surname">
+            </fieldset>
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <input type="text" id="email" placeholder="Correo electrónico">
+                <input type="password" id="password" class="password" placeholder="Contraseña">
+                <input type="password" id="repeat-password" class="repeat-password"
+                    placeholder="Repita su contraseña">
+            </fieldset>
+        </section>
+        <div class="toggle-pass">
+            <input type="checkbox" id="pass-checkbox" class="pass-checkbox">
+            <p id="ver-contra">Mostrar contraseña</p>
+        </div>
+        <input type="submit" value="resgistrarse" class="submit" id="submit"></input>
+        <div>
+            <p id="validacion"></p>
+        </div>
+    </form>
+</section>
+
     <main class="noticias-main">
+
+        <section class="ultima-hora">
+            <div class="icono-noticia"></div>
+            <h1>Última hora</h1>
+        </section>
 
         <section class="noticia-main">
 
             <div class="titulo-noticia">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eligendi excepturi expedita obcaecati,
-                    dolores unde.</h2>
+                <h2>¡Emocionante arranque de la Liga Nacional de Balonmano con enfrentamientos de alto voltaje!</h2>
             </div>
             <div class="foto-noticia">
                 <img src="https://estaticos-cdn.prensaiberica.es/clip/c6289b0a-0760-44b8-aa4e-284cdbcf3965_16-9-discover-aspect-ratio_default_0.webp"
@@ -57,14 +90,13 @@
 
 
             <div class="texto-noticia">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta aliquam quia aliquid repellat!
-                    Voluptates harum itaque, distinctio incidunt blanditiis totam corrupti ipsum ad at culpa temporibus
-                    excepturi explicabo quam iste nam numquam, necessitatibus illum? Libero consequuntur, atque veniam
-                    dicta rerum blanditiis perspiciatis nesciunt error, sunt quia consequatur aliquam modi, fugit
-                    repellat ab natus enim. Cupiditate, distinctio! Aliquam aliquid maxime veniam amet quod, nostrum
-                    obcaecati, quibusdam atque a odio nihil sunt?</p>
+                <p>En una jornada llena de acción y adrenalina, la Liga Nacional de Balonmano dio inicio con partidos electrizantes entre los equipos más destacados de la competición. Los seis equipos participantes, representando a ciudades emblemáticas de España, prometen una temporada llena de emociones y rivalidades intensas.
+                </p>
+                <p>
+                En el primer enfrentamiento, el equipo de Bilbao se enfrentó al imponente conjunto de Barcelona en un partido que mantuvo a los aficionados al borde de sus asientos. Ambos equipos demostraron un nivel de juego excepcional, pero Bilbao logró imponerse con una estrecha victoria, dejando claro que serán contendientes serios en la lucha por el título.</p>
             </div>
         </section>
+       
 
         <section class="container-noticias">
             <div class="noticia noticia1"> </div>
@@ -85,6 +117,8 @@
             <img src="img/luna.png" alt="modo-oscuro" class="icon-tema" id="icon-tema">
         </section>
     </main>
+
+        
 
     <footer>
         <section class="top-footer">
