@@ -1,4 +1,5 @@
 /*--------------CAMBIAMOS DE MODO OSCURO A CLARO-----------------*/
+//COMPROBAMOS QUE EL ELEMENTO ESTÉ EN ESA PÁGINA (si no da error, pues no la encuentra)
 if (document.getElementById('icon-tema')) {
     //selecciono la imagen de cambio de color
     const cambiarColor = document.getElementById('icon-tema')

@@ -590,7 +590,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
 }
 
 
-/* --------------------------------------------------ANTERIOR.HTML------------------------------------------------------ */
+/* --------------------------------------------------TEMPORADAS ANTERIORES------------------------------------------------------ */
 
 .main-anterior{
     display: flex;
@@ -598,10 +598,21 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     align-items: center ;
 }
 
+.container-tabla{
+    margin: 30px auto 80px auto;
+    max-width: 1200px;
+    width: 90%;
+    overflow: auto;
+}
+
+.equipo-tabla{
+    display: flex;
+    align-items: center;
+}
+
 .titulo-jornadas {
 	text-align: center;
 	font-size: 150%;
-	background-color: rgb(244, 85, 85);
 }
 
 .resultados {
@@ -610,8 +621,6 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
 	font-size: 120%;
 	width: 100px;
 }
-
-
 
 .tabla1, .tablaprimera{
 	margin-top: 2%;
@@ -626,27 +635,22 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
 table {
     width: 100%;
 	border-collapse: collapse;
-	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid gray;
 }
 
 table img{
-    width: 30px;
+    width: 30px; 
 }
 /* color lineas de la tabla*/
 
 td {
 	padding: 15px;
-	background: rgba(255, 255, 255, 0.2);
-	border-color: #fff;
-	border-left: rgba(255, 255, 255, 0.2) ;
-	border-right-color:  rgba(255, 255, 255, 0.2);
-	
 }
 
 th {
 	padding: 15px;
 	text-align: left;
+    background-color: rgb(244, 85, 85);
 }
 
 .titulo-centrado{
@@ -664,7 +668,7 @@ th {
 .container-cambiar-temporada{
     display: flex;
     justify-content: right;
-    margin: 20px 50px 20px 0;
+    margin: 20px auto 20px ;
 }
 
 .cambiar-temporada{
@@ -675,6 +679,8 @@ th {
     padding: 10px;
     transition: 0.2s;
     color: var(--body-text-color);
+    margin-right: 5%;
+    text-align: center;
 }
 .cambiar-temporada:hover{
     background-color: var(--body-bg-color);
@@ -689,9 +695,7 @@ th {
 }
 /*----------------------------------------------------NOTICIAS.HTML--------------------------------------------------*/
 
-.noticias-main{
-    padding: 35px 15%;
-}
+
 .icono-noticia{
     height: 15px;
     width: 15px;    
@@ -713,8 +717,9 @@ th {
     display: flex;
     align-items: center;
     gap: 5px;
+    max-width: 1000px;
     width: 90%;
-    margin: 0 auto 15px;
+    margin: 20px auto 15px;
 }
 .noticia-main img{
     width: 100%;
@@ -723,16 +728,16 @@ th {
 }
 
 .noticia-main{
+    max-width: 1000px;
     width: 90%;
     margin: 0 auto 50px ;
     box-shadow: 0 0 6px gray;
     border-radius: 20px;
-    padding: 2%;
+    padding: 3%;
     display: grid;
     grid-template-areas: 
     "h2 img"
     "txt img";
-    padding: 4%;
     background-color: var(--section-bg-color);
     gap: 20px;
 }
@@ -761,8 +766,14 @@ th {
     }
 }
 
+    
+
 .container-noticias{
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
     display: grid;
+    place-content: center;
     grid-template-areas: 
     ". n1 ."
     "n2 n1 n3"
@@ -772,7 +783,6 @@ th {
     "n8 n7 n9"
     "n8 . n9"
     ;
-    place-items: center;
     gap: 10px;
 }
 .noticia{
@@ -782,10 +792,10 @@ th {
     padding: 5px;
     box-shadow: 0 0 2px gray;
     border-radius: 5px;
-    width: 100%;
-    height: 450px;
+    height: auto;
     gap: 10px;
     text-align: justify;
+    
 }
 
 .contenido-noticia-pequeña{
@@ -798,7 +808,7 @@ th {
 .noticia img{
     width: 100%;
 }
-
+@media screen and (min-width:1201px) {
 .noticia1{grid-area: n1;}
 .noticia2{grid-area: n2;}
 .noticia3{grid-area: n3;}
@@ -808,9 +818,13 @@ th {
 .noticia7{grid-area: n7;}
 .noticia8{grid-area: n8;}
 .noticia9{grid-area: n9;}
+}
+
 
 .link-formulario{
-    margin-top: 10px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 20px auto;
     background-color: var(--section-bg-color);
     padding: 20px;
     border-radius: 10px;
@@ -825,6 +839,13 @@ th {
     color: rgba(167, 0, 251, 0.949);
 }
 
+@media screen and (max-width:1200px) {
+    .container-noticias{
+        grid-template-areas: 
+       none;
+       grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
+    }
+}
 
 /* --------------------------------------------FORMULARIO------------------------------------------------- */
 .form-container {
