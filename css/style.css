@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;  
+}
+
 main {
     min-height: 60vh;
     
@@ -327,15 +331,16 @@ footer a:hover {
 }
 .slider {
     display: flex;
-    width: 400vw;
+    width: 400%;
     max-height: 100%;
-    height: 480px;
+    height: 80vh;
     animation: slide 16s infinite;
     overflow: hidden;
 }
 
 .slider img {
     width: 100%;
+    object-fit: cover;
 }
 
 /* animaciones para el slider de la pagina principal */
@@ -583,6 +588,105 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
         border: solid gray 0.5px;
     }
 }
+
+
+/* --------------------------------------------------ANTERIOR.HTML------------------------------------------------------ */
+
+.main-anterior{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.titulo-jornadas {
+	text-align: center;
+	font-size: 150%;
+	background-color: rgb(244, 85, 85);
+}
+
+.resultados {
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	width: 100px;
+}
+
+
+
+.tabla1, .tablaprimera{
+	margin-top: 2%;
+	margin-bottom: 5%;
+	display: flex;
+	justify-content: center;
+    max-width: 800px;
+    width: 90%;
+}
+
+
+table {
+    width: 100%;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table img{
+    width: 30px;
+}
+/* color lineas de la tabla*/
+
+td {
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.2);
+	border-color: #fff;
+	border-left: rgba(255, 255, 255, 0.2) ;
+	border-right-color:  rgba(255, 255, 255, 0.2);
+	
+}
+
+th {
+	padding: 15px;
+	text-align: left;
+}
+
+.titulo-centrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultados{
+    background: var(--section-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: 0.1px solid gray;
+}
+
+.container-cambiar-temporada{
+    display: flex;
+    justify-content: right;
+    margin: 20px 50px 20px 0;
+}
+
+.cambiar-temporada{
+    text-decoration: none;
+    background-color: var(--header-bg-color);
+    box-shadow: 0 0 2px gray;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.2s;
+    color: var(--body-text-color);
+}
+.cambiar-temporada:hover{
+    background-color: var(--body-bg-color);
+    color: var(--body-text-color);
+    
+}
+
+@media screen and (max-width:1050px) {
+    .navigation{
+        display: none;
+    }
+}
 /*----------------------------------------------------NOTICIAS.HTML--------------------------------------------------*/
 
 .noticias-main{
@@ -609,7 +713,8 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     display: flex;
     align-items: center;
     gap: 5px;
-    margin: 0 0 15px 15px;
+    width: 90%;
+    margin: 0 auto 15px;
 }
 .noticia-main img{
     width: 100%;
@@ -668,12 +773,30 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     "n8 . n9"
     ;
     place-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 .noticia{
-    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--section-bg-color);
+    padding: 5px;
+    box-shadow: 0 0 2px gray;
+    border-radius: 5px;
     width: 100%;
-    height: 400px;
+    height: 450px;
+    gap: 10px;
+    text-align: justify;
+}
+
+.contenido-noticia-pequeña{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-inline: 10px;
+}
+
+.noticia img{
+    width: 100%;
 }
 
 .noticia1{grid-area: n1;}
@@ -685,6 +808,22 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
 .noticia7{grid-area: n7;}
 .noticia8{grid-area: n8;}
 .noticia9{grid-area: n9;}
+
+.link-formulario{
+    margin-top: 10px;
+    background-color: var(--section-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px gray;
+}
+
+.link-formulario a{
+    text-decoration: none;
+}
+.link-formulario a:hover{
+    text-decoration: underline;
+    color: rgba(167, 0, 251, 0.949);
+}
 
 
 /* --------------------------------------------FORMULARIO------------------------------------------------- */
@@ -712,7 +851,7 @@ section.visible{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 350px;
+    max-width: 350px;
     position: relative;
 }
 
