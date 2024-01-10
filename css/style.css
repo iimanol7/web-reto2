@@ -16,13 +16,13 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;  
+html {
+    scroll-behavior: smooth;
 }
 
 main {
     min-height: 60vh;
-    
+
 }
 
 
@@ -40,7 +40,7 @@ body.dark {
     --body-text-color: white;
     --header-bg-color: #272727;
     --nav-bg-color: rgb(245, 244, 244);
-    --nav-text-color:black;
+    --nav-text-color: black;
     --header-text-color: white;
     --section-bg-color: #2a2a2a;
     transition: 0.25s;
@@ -110,23 +110,24 @@ nav a {
     display: block;
 }
 
-nav a::after{
+nav a::after {
     content: '';
     display: block;
     margin: auto;
     height: 2px;
     width: 0%;
     background-color: var(--nav-text-color);
-    border-radius:2px;
+    border-radius: 2px;
     transition: 0.3s;
 }
-a.select::after{
+
+a.select::after {
     width: 100%;
 }
 
 nav a:hover::after {
     width: 100%;
-} 
+}
 
 nav li {
     list-style: none;
@@ -147,6 +148,7 @@ nav li {
     background: #000;
     text-align: center;
 }
+
 .menu-horizontal li:hover .menu-vertical {
     display: block;
 }
@@ -233,12 +235,12 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:  #272727;
+    background-color: #272727;
 }
 
 /* Estilo para la parte superior del pie de página */
 .top-footer {
-    background-color:  #272727;
+    background-color: #272727;
     display: flex;
     justify-content: center;
     padding: 0.625rem;
@@ -326,9 +328,11 @@ footer a:hover {
     overflow: hidden;
     position: relative;
 }
-.container-slider{
+
+.container-slider {
     overflow: hidden;
 }
+
 .slider {
     display: flex;
     width: 400%;
@@ -389,10 +393,11 @@ footer a:hover {
 
 /* --------------------------------------------------JORNADAS.HTML------------------------------------------------------ */
 
-.main-jornadas{
-    padding: 10px 0  80px;
+.main-jornadas {
+    padding: 10px 0 80px;
 }
-.container-jornadas{
+
+.container-jornadas {
     padding: 10px;
     width: 100%;
     max-width: 800px;
@@ -400,14 +405,15 @@ footer a:hover {
     margin: 20px auto;
     background-color: var(--header-bg-color);
     border-radius: 10px;
-    box-shadow: 0 6px 12px gray;
+    box-shadow: 0 0 6px gray;
     overflow: hidden;
 }
 
-.ul-jornadas{
+.ul-jornadas {
     position: relative;
 }
-.jornada{
+
+.jornada {
     position: absolute;
     list-style: none;
     width: 100%;
@@ -418,28 +424,30 @@ footer a:hover {
 }
 
 
-.ul-jornadas li:first-child{
+.ul-jornadas li:first-child {
     opacity: 1;
 }
 
 
-.jornada:target{
+.jornada:target {
     opacity: 1;
 }
 
-.partido{
+.partido {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
-.hora-partido{
+
+.hora-partido {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: bold;
 }
-.jornadas-btn{
+
+.jornadas-btn {
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -451,15 +459,17 @@ footer a:hover {
     box-shadow: 0 0px 12px gray;
     overflow: hidden;
 }
-.jornadas-btn a{
+
+.jornadas-btn a {
     text-decoration: none;
     color: var(--header-bg-color);
     padding: 10px 13px;
     background-color: var(--header-text-color);
-    border-radius:35% ;
+    border-radius: 35%;
     position: relative;
 }
-.jornadas-btn .a1::before{
+
+.jornadas-btn .a1::before {
     content: "J1";
     position: absolute;
     background-color: var(--header-text-color);
@@ -470,7 +480,8 @@ footer a:hover {
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     transition: 0.4s ease;
 }
-.jornadas-btn .a2::before{
+
+.jornadas-btn .a2::before {
     content: "J2";
     position: absolute;
     background-color: var(--header-text-color);
@@ -478,10 +489,11 @@ footer a:hover {
     top: -100px;
     left: 0;
     right: 0;
-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-     transition: 0.4s ease;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
+    transition: 0.4s ease;
 }
-.jornadas-btn .a3::before{
+
+.jornadas-btn .a3::before {
     content: "J3";
     position: absolute;
     background-color: var(--header-text-color);
@@ -489,10 +501,11 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     top: -100px;
     left: 0;
     right: 0;
-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-     transition: 0.4s ease;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
+    transition: 0.4s ease;
 }
-.jornadas-btn .a4::before{
+
+.jornadas-btn .a4::before {
     content: "J4";
     position: absolute;
     background-color: var(--header-text-color);
@@ -500,10 +513,11 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     top: -100px;
     left: 0;
     right: 0;
-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-     transition: 0.4s ease;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
+    transition: 0.4s ease;
 }
-.jornadas-btn .a5::before{
+
+.jornadas-btn .a5::before {
     content: "J5";
     position: absolute;
     background-color: var(--header-text-color);
@@ -511,10 +525,11 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     top: -100px;
     left: 0;
     right: 0;
-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-     transition: 0.4s ease;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
+    transition: 0.4s ease;
 }
-.jornadas-btn .a6::before{
+
+.jornadas-btn .a6::before {
     content: "J6";
     position: absolute;
     background-color: var(--header-text-color);
@@ -522,10 +537,11 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     top: -100px;
     left: 0;
     right: 0;
-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-     transition: 0.4s ease;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
+    transition: 0.4s ease;
 }
-.jornadas-btn .a7::before{
+
+.jornadas-btn .a7::before {
     content: "J7";
     position: absolute;
     background-color: var(--header-text-color);
@@ -533,10 +549,11 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     top: -100px;
     left: 0;
     right: 0;
-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-     transition: 0.4s ease;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
+    transition: 0.4s ease;
 }
-.jornadas-btn .a8::before{
+
+.jornadas-btn .a8::before {
     content: "J8";
     position: absolute;
     background-color: var(--header-text-color);
@@ -544,10 +561,11 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     top: -100px;
     left: 0;
     right: 0;
-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-     transition: 0.4s ease;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
+    transition: 0.4s ease;
 }
-.jornadas-btn .a9::before{
+
+.jornadas-btn .a9::before {
     content: "J9";
     position: absolute;
     background-color: var(--header-text-color);
@@ -555,10 +573,11 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     top: -100px;
     left: 0;
     right: 0;
-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-     transition: 0.4s ease;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
+    transition: 0.4s ease;
 }
-.jornadas-btn .a10::before{
+
+.jornadas-btn .a10::before {
     content: "J10";
     position: absolute;
     background-color: var(--header-text-color);
@@ -566,25 +585,26 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
     top: -100px;
     left: 0;
     right: 0;
-clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-     transition: 0.4s ease;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
+    transition: 0.4s ease;
 }
 
-.jornadas-btn a:hover::before{
+.jornadas-btn a:hover::before {
     top: -20px;
 }
 
-@media screen and (max-width:530px){
-    .jornadas-btn{
+@media screen and (max-width:530px) {
+    .jornadas-btn {
         justify-content: center;
         border-radius: 0px;
         box-shadow: 0 0 0;
         border: solid gray 0.5px;
     }
-    .container-jornadas{
+
+    .container-jornadas {
         border-radius: 0px;
         margin-bottom: 0px;
-        box-shadow: 0 0 0px ;
+        box-shadow: 0 0 0px;
         border: solid gray 0.5px;
     }
 }
@@ -592,41 +612,42 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
 
 /* --------------------------------------------------TEMPORADAS ANTERIORES------------------------------------------------------ */
 
-.main-anterior{
+.main-anterior {
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
 }
 
-.container-tabla{
+.container-tabla {
     margin: 30px auto 80px auto;
     max-width: 1200px;
     width: 90%;
     overflow: auto;
 }
 
-.equipo-tabla{
+.equipo-tabla {
     display: flex;
     align-items: center;
 }
 
 .titulo-jornadas {
-	text-align: center;
-	font-size: 150%;
+    text-align: center;
+    font-size: 150%;
 }
 
 .resultados {
-	text-align: center;
-	font-weight: bold;
-	font-size: 120%;
-	width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+    width: 100px;
 }
 
-.tabla1, .tablaprimera{
-	margin-top: 2%;
-	margin-bottom: 5%;
-	display: flex;
-	justify-content: center;
+.tabla1,
+.tablaprimera {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
     max-width: 800px;
     width: 90%;
 }
@@ -634,44 +655,45 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
 
 table {
     width: 100%;
-	border-collapse: collapse;
+    border-collapse: collapse;
     border: 0.5px solid gray;
 }
 
-table img{
-    width: 30px; 
+table img {
+    width: 30px;
 }
+
 /* color lineas de la tabla*/
 
 td {
-	padding: 15px;
+    padding: 15px;
 }
 
 th {
-	padding: 15px;
-	text-align: left;
+    padding: 15px;
+    text-align: left;
     background-color: rgb(244, 85, 85);
 }
 
-.titulo-centrado{
+.titulo-centrado {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.resultados{
+.resultados {
     background: var(--section-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.2);
     outline: 0.1px solid gray;
 }
 
-.container-cambiar-temporada{
+.container-cambiar-temporada {
     display: flex;
     justify-content: right;
-    margin: 20px auto 20px ;
+    margin: 20px auto 20px;
 }
 
-.cambiar-temporada{
+.cambiar-temporada {
     text-decoration: none;
     background-color: var(--header-bg-color);
     box-shadow: 0 0 2px gray;
@@ -682,38 +704,50 @@ th {
     margin-right: 5%;
     text-align: center;
 }
-.cambiar-temporada:hover{
+
+.cambiar-temporada:hover {
     background-color: var(--body-bg-color);
     color: var(--body-text-color);
-    
+
 }
 
 @media screen and (max-width:1050px) {
-    .navigation{
+    .navigation {
         display: none;
     }
 }
+
 /*----------------------------------------------------NOTICIAS.HTML--------------------------------------------------*/
 
 
-.icono-noticia{
+.icono-noticia {
     height: 15px;
-    width: 15px;    
+    width: 15px;
     background-color: red;
     border-radius: 50%;
     animation: parpadeo 1s infinite ease-in-out;
 }
 
-@keyframes parpadeo{
-    0%{transform: scale(1);}
-    49.99%{transform: scale(1);}
-    50%{
+@keyframes parpadeo {
+    0% {
+        transform: scale(1);
+    }
+
+    49.99% {
+        transform: scale(1);
+    }
+
+    50% {
         transform: scale(0);
         transition: 5s;
     }
-    100%{transform: scale(0);}
+
+    100% {
+        transform: scale(0);
+    }
 }
-.ultima-hora{
+
+.ultima-hora {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -721,71 +755,74 @@ th {
     width: 90%;
     margin: 20px auto 15px;
 }
-.noticia-main img{
+
+.noticia-main img {
     width: 100%;
     object-fit: cover;
     height: 100%;
 }
 
-.noticia-main{
+.noticia-main {
     max-width: 1000px;
     width: 90%;
-    margin: 0 auto 50px ;
+    margin: 0 auto 50px;
     box-shadow: 0 0 6px gray;
     border-radius: 20px;
     padding: 3%;
     display: grid;
-    grid-template-areas: 
-    "h2 img"
-    "txt img";
+    grid-template-areas:
+        "h2 img"
+        "txt img";
     background-color: var(--section-bg-color);
     gap: 20px;
 }
 
-.titulo-noticia{
+.titulo-noticia {
     grid-area: h2;
 
 }
-.texto-noticia{
-    grid-area: txt ;
+
+.texto-noticia {
+    grid-area: txt;
 
 }
 
-.foto-noticia{
+.foto-noticia {
     grid-area: img;
 }
 
 /* estilos cuando la pantalla es mas pequeña */
 @media screen and (max-width:1100px) {
-    .noticia-main{
-        grid-template-areas: 
-        "img img"
-        "h2 h2"
-        "txt txt"
+    .noticia-main {
+        grid-template-areas:
+            "img img"
+            "h2 h2"
+            "txt txt"
         ;
     }
 }
 
-    
 
-.container-noticias{
+
+.container-noticias {
     max-width: 1000px;
     width: 90%;
     margin: auto;
     display: grid;
     place-content: center;
-    grid-template-areas: 
-    ". n1 ."
-    "n2 n1 n3"
-    "n2 n4 n3"
-    "n5 n4 n6"
-    "n5 n7 n6"
-    "n8 n7 n9"
-    "n8 . n9"
+    grid-template-areas:
+        ". n1 ."
+        "n2 n1 n3"
+        "n2 n4 n3"
+        "n5 n4 n6"
+        "n5 n7 n6"
+        "n8 n7 n9"
+        "n8 . n9"
     ;
     gap: 10px;
 }
-.noticia{
+
+.noticia {
     display: flex;
     flex-direction: column;
     background-color: var(--section-bg-color);
@@ -795,33 +832,60 @@ th {
     height: auto;
     gap: 10px;
     text-align: justify;
-    
+
 }
 
-.contenido-noticia-pequeña{
+.contenido-noticia-pequeña {
     display: flex;
     flex-direction: column;
     gap: 7px;
     padding-inline: 10px;
 }
 
-.noticia img{
+.noticia img {
     width: 100%;
 }
+
 @media screen and (min-width:1201px) {
-.noticia1{grid-area: n1;}
-.noticia2{grid-area: n2;}
-.noticia3{grid-area: n3;}
-.noticia4{grid-area: n4;}
-.noticia5{grid-area: n5;}
-.noticia6{grid-area: n6;}
-.noticia7{grid-area: n7;}
-.noticia8{grid-area: n8;}
-.noticia9{grid-area: n9;}
+    .noticia1 {
+        grid-area: n1;
+    }
+
+    .noticia2 {
+        grid-area: n2;
+    }
+
+    .noticia3 {
+        grid-area: n3;
+    }
+
+    .noticia4 {
+        grid-area: n4;
+    }
+
+    .noticia5 {
+        grid-area: n5;
+    }
+
+    .noticia6 {
+        grid-area: n6;
+    }
+
+    .noticia7 {
+        grid-area: n7;
+    }
+
+    .noticia8 {
+        grid-area: n8;
+    }
+
+    .noticia9 {
+        grid-area: n9;
+    }
 }
 
 
-.link-formulario{
+.link-formulario {
     max-width: 1000px;
     width: 90%;
     margin: 20px auto;
@@ -831,19 +895,20 @@ th {
     box-shadow: 0 0 2px gray;
 }
 
-.link-formulario a{
+.link-formulario a {
     text-decoration: none;
 }
-.link-formulario a:hover{
+
+.link-formulario a:hover {
     text-decoration: underline;
     color: rgba(167, 0, 251, 0.949);
 }
 
 @media screen and (max-width:1200px) {
-    .container-noticias{
-        grid-template-areas: 
-       none;
-       grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
+    .container-noticias {
+        grid-template-areas:
+            none;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
     }
 }
 
@@ -852,7 +917,7 @@ th {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:  30px auto;
+    margin: 30px auto;
     padding: 0;
     transform: scale(0);
     position: fixed;
@@ -860,9 +925,9 @@ th {
     transition: 1s;
 }
 
-section.visible{
+section.visible {
     transform: scale(1);
-    position: fixed;    
+    position: fixed;
     transition: 1s;
     inset: 0;
 }
@@ -876,19 +941,20 @@ section.visible{
     position: relative;
 }
 
-.form-inputs{
+.form-inputs {
     width: 100%;
     padding: 0;
 }
 
-.form-inputs input{
+.form-inputs input {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.submit{
+
+.submit {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -896,12 +962,14 @@ section.visible{
     cursor: pointer;
     transition: 0.3s;
 }
-.submit:hover{
+
+.submit:hover {
     background-color: #ccd;
 }
-.toggle-pass{
+
+.toggle-pass {
     padding: 10px;
-    display: flex; 
+    display: flex;
     gap: 5px;
 }
 
@@ -911,14 +979,14 @@ section.visible{
 
 }
 
-.form fieldset > legend{
+.form fieldset>legend {
     font-size: 14px;
     background-color: var(--header-bg-color);
     padding: 4px;
     border-radius: 3px;
 }
 
-.close-form{
+.close-form {
     position: absolute;
     top: 0;
     right: 0;
@@ -926,7 +994,7 @@ section.visible{
     filter: drop-shadow(0 0 6px white);
 }
 
-#validacion{
+#validacion {
     font-size: 15px;
     color: red;
     text-align: center;
@@ -936,10 +1004,11 @@ section.visible{
 
 
 /* --------------------------------------------EQUIPOS.XML------------------------------------------------- */
-.container-equipos img{
+.container-equipos img {
     width: 100%;
 }
-.container-equipos{
+
+.container-equipos {
     width: 70%;
     display: grid;
     margin: 50px auto;
@@ -948,7 +1017,7 @@ section.visible{
     gap: 20px;
 }
 
-.equipo{
+.equipo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -962,37 +1031,48 @@ section.visible{
     background-color: var(--section-bg-color);
 }
 
-.equipo:hover{
+.equipo:hover {
     transform: scale(1.05);
 }
 
 /* ------------------------------------ESTILO-EQUIPO.XSL------------------------------------------ */
 
-.equipo-main{
+.equipo-main {
     width: 80%;
     margin: auto;
 }
 
-.equipo-main img{
+.jugadores img,
+.entrenadores img {
     width: 100%;
+    max-width: 160px;
     aspect-ratio: 1/1;
     object-fit: cover;
+    background-color: var(--section-bg-color);
+    box-shadow: 0 0 1px gray;
+    margin-bottom: 10px;
+    margin: auto;
 }
-.equipo-main h2{
+
+.equipo-main h2 {
     margin-bottom: 10px;
 }
-.cabecera-equipo{
+
+.cabecera-equipo {
     margin: 50px 0 50px 0;
     display: flex;
     align-items: center;
     font-size: 30px;
 }
 
-.escudo-BILBAO, .escudo-BARCELONA, .escudo-SEVILLA{
+.escudo-BILBAO,
+.escudo-BARCELONA,
+.escudo-SEVILLA {
     margin-top: 7px;
 }
 
-.cabecera-img{
+.cabecera-img {
+
     border-radius: 50%;
     border: 1px solid gray;
     width: 100px;
@@ -1000,28 +1080,38 @@ section.visible{
     padding: 10px;
 }
 
-
-
-.jugadores, .entrenadores{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
-    margin-bottom: 100px;
+.cabecera-img img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
-.nombre-componente{
+
+
+.jugadores,
+.entrenadores {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    margin: 50px 0 100px 0;
+   justify-content: space-around;
+}
+.jugador{
+    margin-bottom: 10px;
+}
+
+.nombre-componente {
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
-
-
 /* ------------------------------------CONDICIONES-LEGALES------------------------------------------ */
-.condiciones{
-    margin: 50px auto ;
+.condiciones {
+    margin: 50px auto;
     width: 80%;
 }
 
-.condiciones h2, p{
+.condiciones h2,
+p {
     margin: 10px 0 10px 0;
 }

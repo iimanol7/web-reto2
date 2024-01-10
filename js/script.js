@@ -56,39 +56,38 @@ if (document.getElementById('pass-checkbox')) {
     const error = document.getElementById('validacion')
     const name = document.getElementById('name')
     const surname = document.getElementById('surname')
- 
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         //reinicio valor del error (para que no se repita cada vez)
         error.innerHTML = ""
+        //(expresión regular para validar el formato del email)
+        const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+        //(Expresión regular para comprobar el formato de la contraseña)
+        const regexPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/
         //creo una variable para comprobar si todo está correcto
         let esCorrecto = true
         //compruebo si los campos de nombre y apellido estan vacios
         if (name.value.length <= 0 || surname.value.length <= 0) {
             error.innerHTML = "Los campos de Nombre y Apellido no pueden estar vacios. <br>"
             esCorrecto = false
-        }
-        //(expresión regular para validar el formato del email)
-        const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-        //coMpruebo que el email esta correcto
-        if (!regexEmail.test(mail.value)) {
+        } else if (!regexEmail.test(mail.value)) {
+
+            //coMpruebo que el email esta correcto
             error.innerHTML += "El correo no es valido. <br>"
             esCorrecto = false
-        }
-        //(Expresión regular para comprobar el formato de la contraseña)
-        const regexPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/
-        //compruebo que la contraseña tenga mas de 6 caracteres
-        if (pass.value.length < 6) {
+        }else  if (pass.value.length < 6) {
+            //compruebo que la contraseña tenga mas de 6 caracteres
             error.innerHTML += "La contraseña debe contener al menos 6 caracteres. <br>"
             esCorrecto = false
         } else if (!regexPass.test(pass.value)) {
+            //compruebo que la contraseña contenga un número y una mayúscula
             error.innerHTML += "la contraseña debe contener al menos una letra minúscula, una mayúscula y un número. <br>"
             esCorrecto = false
         } else if (pass.value !== repeatPass.value) {
             error.innerHTML += "Las contraseñas no coinciden. <br>"
             esCorrecto = false
         }
-
 
         //SI TODO ESTÁ CORRECTO:
         if (esCorrecto) {
@@ -118,7 +117,7 @@ if (document.querySelector('#link-form')) {
         //hacemos visible el formulario
         form.classList.add('visible')
     })
-    closeForm.addEventListener('click', function(){
+    closeForm.addEventListener('click', function () {
         form.classList.remove('visible')
     })
 

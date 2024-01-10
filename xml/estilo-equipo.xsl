@@ -75,7 +75,7 @@
         
         <xsl:for-each select="key('tipo' , 'jugador')">
           <div class="jugador">
-          <div class="img-componente"><img src="../img/{imagen}"/></div>
+          <div class="img-componente"><img src="../img/jugadoras/{imagen}"/></div>
           <div class="nombre-componente"><h3><xsl:value-of select="nombre"/></h3><h3><xsl:value-of select="apellidos"/></h3></div>
           <div class="posicion-componente"><xsl:value-of select="posicion"/></div>
           <div class="dorsal-componente"><xsl:value-of select="dorsal"/></div>
