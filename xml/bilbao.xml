@@ -45,7 +45,7 @@
     </componente>
 
     <componente tipo="jugador">
-        <imagen>j35.png</imagen>
+        <imagen>j6.png</imagen>
         <nombre>Celia</nombre>
         <apellidos>Acuña</apellidos>
         <posicion>Pivote</posicion>

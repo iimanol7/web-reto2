@@ -390,6 +390,17 @@ footer a:hover {
     box-shadow: 0 0 6px black;
 }
 
+@media screen and (max-width:850px) {
+    .container-slider{
+        height: 400px;
+    }
+}
+@media screen and (max-width:650px) {
+    .container-slider{
+        height: 300px;
+    }
+}
+
 
 /* --------------------------------------------------JORNADAS.HTML------------------------------------------------------ */
 
@@ -685,6 +696,8 @@ th {
     background: var(--section-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.2);
     outline: 0.1px solid gray;
+    font-size: 0.8rem;
+    min-width: 65px;
 }
 
 .container-cambiar-temporada {
@@ -760,6 +773,7 @@ th {
     width: 100%;
     object-fit: cover;
     height: 100%;
+    border-radius: 10px;
 }
 
 .noticia-main {
@@ -927,7 +941,6 @@ th {
 
 section.visible {
     transform: scale(1);
-    position: fixed;
     transition: 1s;
     inset: 0;
 }
@@ -994,6 +1007,10 @@ section.visible {
     filter: drop-shadow(0 0 6px white);
 }
 
+.close-form:active{
+    transform: scale(0.9);
+}
+
 #validacion {
     font-size: 15px;
     color: red;
@@ -1035,11 +1052,27 @@ section.visible {
     transform: scale(1.05);
 }
 
+@media screen and (max-width:851.5px) {
+    .equipo{
+        box-shadow: 0 0 0;
+    }
+    
+}
+
 /* ------------------------------------ESTILO-EQUIPO.XSL------------------------------------------ */
 
 .equipo-main {
     width: 80%;
     margin: auto;
+}
+.img-atras{
+    width: 50px;
+    margin-top: 10px;
+}
+
+.img-atras:active{
+    filter: drop-shadow(0 0 3px gray);
+    transform: scale(0.9);
 }
 
 .jugadores img,
@@ -1056,10 +1089,11 @@ section.visible {
 
 .equipo-main h2 {
     margin-bottom: 10px;
+    
 }
 
 .cabecera-equipo {
-    margin: 50px 0 50px 0;
+    margin: 20px 0 50px 0;
     display: flex;
     align-items: center;
     font-size: 30px;
@@ -1091,20 +1125,36 @@ section.visible {
 .jugadores,
 .entrenadores {
     display: grid;
-    grid-template-columns: repeat(3, 20%);
-    margin: 50px 0 100px 0;
-   justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+    gap: 50px;
+    margin-bottom: 50px;
 }
-.jugador{
-    margin-bottom: 10px;
+.jugador, .entrenador{
+    padding: 30px;
+   display: flex; 
+   align-items: center;
+   border: 1px solid gray;
 }
-
+.img-componente{
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
 .nombre-componente {
     display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
+}
+.info-componente{
+    margin-left: 10px;
 }
 
+@media screen and (max-width:510px) {
+    .cabecera-equipo h1{
+        font-size: 2rem;
+        margin-left: 2px;
+    }
+}
 /* ------------------------------------CONDICIONES-LEGALES------------------------------------------ */
 .condiciones {
     margin: 50px auto;

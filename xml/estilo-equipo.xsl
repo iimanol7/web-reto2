@@ -54,6 +54,8 @@
       <!-- ________________________________contenido-main_________________________________ -->
       <main class="equipo-main">
 
+       <a href="../equipos.xml" ><img src="../img/flecha-atras.png" alt="Volver" class="img-atras"/></a>
+
         <section class="cabecera-equipo">
           <div class="cabecera-img" ><img src="{equipo/@escudo}" class="escudo-{equipo/@nombre}"/></div>
           <h1><xsl:value-of select="equipo/@nombre"/></h1>
@@ -74,11 +76,12 @@
        <section class="jugadores">
         
         <xsl:for-each select="key('tipo' , 'jugador')">
-          <div class="jugador">
+        <div class="jugador">
           <div class="img-componente"><img src="../img/jugadoras/{imagen}"/></div>
-          <div class="nombre-componente"><h3><xsl:value-of select="nombre"/></h3><h3><xsl:value-of select="apellidos"/></h3></div>
-          <div class="posicion-componente"><xsl:value-of select="posicion"/></div>
-          <div class="dorsal-componente"><xsl:value-of select="dorsal"/></div>
+          <div class="info-componente">
+            <div class="nombre-componente"><h3><xsl:value-of select="nombre"/></h3><h3><xsl:value-of select="apellidos"/></h3></div>
+            <div class="posicion-componente"><xsl:value-of select="posicion"/></div>
+          </div>
         </div>
         </xsl:for-each>
        </section>
