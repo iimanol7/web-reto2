@@ -391,12 +391,13 @@ footer a:hover {
 }
 
 @media screen and (max-width:850px) {
-    .container-slider{
+    .container-slider {
         height: 400px;
     }
 }
+
 @media screen and (max-width:650px) {
-    .container-slider{
+    .container-slider {
         height: 300px;
     }
 }
@@ -1007,7 +1008,7 @@ section.visible {
     filter: drop-shadow(0 0 6px white);
 }
 
-.close-form:active{
+.close-form:active {
     transform: scale(0.9);
 }
 
@@ -1053,10 +1054,10 @@ section.visible {
 }
 
 @media screen and (max-width:851.5px) {
-    .equipo{
+    .equipo {
         box-shadow: 0 0 0;
     }
-    
+
 }
 
 /* ------------------------------------ESTILO-EQUIPO.XSL------------------------------------------ */
@@ -1065,12 +1066,13 @@ section.visible {
     width: 80%;
     margin: auto;
 }
-.img-atras{
+
+.img-atras {
     width: 50px;
     margin-top: 10px;
 }
 
-.img-atras:active{
+.img-atras:active {
     filter: drop-shadow(0 0 3px gray);
     transform: scale(0.9);
 }
@@ -1089,7 +1091,7 @@ section.visible {
 
 .equipo-main h2 {
     margin-bottom: 10px;
-    
+
 }
 
 .cabecera-equipo {
@@ -1129,32 +1131,38 @@ section.visible {
     gap: 50px;
     margin-bottom: 50px;
 }
-.jugador, .entrenador{
+
+.jugador,
+.entrenador {
     padding: 30px;
-   display: flex; 
-   align-items: center;
-   border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 1px gray;
 }
-.img-componente{
+
+.img-componente {
     border: 1px solid black;
     border-radius: 50%;
     overflow: hidden;
     width: 50px;
     height: 50px;
 }
+
 .nombre-componente {
     display: flex;
 }
-.info-componente{
+
+.info-componente {
     margin-left: 10px;
 }
 
 @media screen and (max-width:510px) {
-    .cabecera-equipo h1{
+    .cabecera-equipo h1 {
         font-size: 2rem;
         margin-left: 2px;
     }
 }
+
 /* ------------------------------------CONDICIONES-LEGALES------------------------------------------ */
 .condiciones {
     margin: 50px auto;
