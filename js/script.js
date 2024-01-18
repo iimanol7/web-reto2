@@ -98,6 +98,7 @@ if (document.getElementById('pass-checkbox')) {
             surname.value = ""
             mail.value = ""
             pass.value = ""
+            repeatPass.value = ""
             //Cierro el formulario
             formSection.classList.remove('visible')
         }
