@@ -1282,7 +1282,7 @@ section.visible {
         box-shadow: 0 0 0;
     }
 
-} */
+} 
 
 /* ------------------------------------ESTILO-EQUIPO.XSL------------------------------------------ */
 
@@ -1354,7 +1354,6 @@ section.visible {
     grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
     gap: 50px;
     margin-bottom: 50px;
-
 }
 
 .jugador,
