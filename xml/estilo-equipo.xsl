@@ -66,7 +66,7 @@
       <section class="entrenadores">
         <xsl:for-each select="key('tipo' , 'entrenador')">
           <div class="entrenador">
-            <div class="img-componente"><img src="../img/{imagen}"/></div>
+            <div class="img-componente"><img src="../img/componentes/{imagen}"/></div>
             <div class="nombre-componente"><h3><xsl:value-of select="nombre"/></h3><h3><xsl:value-of select="apellidos"/></h3></div>
           </div>
         </xsl:for-each>
@@ -77,7 +77,7 @@
         
         <xsl:for-each select="key('tipo' , 'jugador')">
         <div class="jugador">
-          <div class="img-componente"><img src="../img/jugadoras/{imagen}"/></div>
+          <div class="img-componente"><img src="../img/componentes/{imagen}"/></div>
           <div class="info-componente">
             <div class="nombre-componente"><h3><xsl:value-of select="nombre"/></h3><h3><xsl:value-of select="apellidos"/></h3></div>
             <div class="posicion-componente"><xsl:value-of select="posicion"/></div>

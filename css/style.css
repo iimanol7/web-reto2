@@ -442,7 +442,8 @@ footer a:hover {
     transition: 0.3s;
     opacity: 0.7;
 }
-.ver-mas:active .triangulo{
+
+.ver-mas:active .triangulo {
     transform: translateX(10px);
 }
 
@@ -480,7 +481,8 @@ footer a:hover {
     margin-top: 30px;
     padding: 0 9%;
 }
-.colaboradores img{
+
+.colaboradores img {
     width: 100%;
     filter: drop-shadow(0 0 3px white);
 }
@@ -512,11 +514,13 @@ tr th {
     display: flex;
     justify-content: end;
 }
-.videos{
+
+.videos {
     display: grid;
     gap: 30px;
 }
-.oculto{
+
+.oculto {
     display: none;
 }
 
@@ -524,26 +528,33 @@ tr th {
     .container-slider {
         height: 500px;
     }
+
     /* .noticia-pequeña1, .noticia-pequeña2{
         display: none;
     } */
-    .section-resumenes{
+    .section-resumenes {
         display: flex;
         flex-direction: column;
     }
-    .resumen-noticias{
+
+    .resumen-noticias {
         border-right: 0px;
     }
-    .ver-mas-tabla{
+
+    .ver-mas-tabla {
         justify-content: start;
     }
-    .section-tabla-resumen{
+
+    .section-tabla-resumen {
         display: none;
     }
-    .noticia-pequeña1, .noticia-pequeña2{
+
+    .noticia-pequeña1,
+    .noticia-pequeña2 {
         display: none;
     }
-    .section-resumenes{
+
+    .section-resumenes {
         padding: 0;
     }
 }
@@ -552,14 +563,17 @@ tr th {
     .container-slider {
         height: 400px;
     }
-    .noticias-inicio{
+
+    .noticias-inicio {
         display: flex;
         flex-direction: column;
     }
-    .colaboradores > img{
+
+    .colaboradores>img {
         display: none;
     }
-    .oculto{
+
+    .oculto {
         display: block;
     }
 }
@@ -1191,42 +1205,84 @@ section.visible {
 
 /* --------------------------------------------EQUIPOS.XML------------------------------------------------- */
 .container-equipos img {
-    width: 100%;
+    width: 300px;
+    object-fit: cover;
 }
 
 .container-equipos {
-    width: 70%;
-    display: grid;
+    display: flex;
+    max-width: 650px;
+    width: 90%;
+    height: 430px;
     margin: 50px auto;
-    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
-    place-items: center;
-    gap: 20px;
 }
 
 .equipo {
+    width: 0px;
+    height: 430px;
+    flex-grow: 1;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    box-shadow: 0 0 6px gray;
-    border-radius: 20px;
-    text-decoration: underline;
-    width: 100%;
-    color: var(--body-text-color);
-    transition: 0.3s;
-    background-color: var(--section-bg-color);
+    transition: 0.6s;
+    position: relative;
+}
+
+.equipo h2 {
+    position: absolute;
+    top: -30px;
+    transition: 0.6s;
 }
 
 .equipo:hover {
-    transform: scale(1.05);
+    width: 200px;
 }
 
-@media screen and (max-width:851.5px) {
+.equipo:hover h2 {
+    top: 25px;
+}
+
+
+#equipo1 {
+    background-color: red;
+    color: white;
+}
+
+#equipo2 {
+    background-color: blue;
+    color: white;
+}
+
+#equipo3 {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#equipo4 {
+    background-color: rgb(213, 4, 4);
+    color: white;
+}
+
+#equipo5 {
+    background-color: skyblue;
+    color: black;
+}
+
+#equipo6 {
+    background-color: rgb(253, 61, 61);
+    color: white;
+}
+
+
+
+@media screen and (max-width:800px) {
     .equipo {
         box-shadow: 0 0 0;
     }
 
-}
+} */
 
 /* ------------------------------------ESTILO-EQUIPO.XSL------------------------------------------ */
 
@@ -1298,7 +1354,7 @@ section.visible {
     grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
     gap: 50px;
     margin-bottom: 50px;
-    
+
 }
 
 .jugador,

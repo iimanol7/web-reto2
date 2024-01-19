@@ -3,7 +3,7 @@
 <equipo nombre="MADRID" escudo="../img/madrid.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
 
     <componente tipo="entrenador">
-        <imagen>entrenador.png</imagen>
+        <imagen>e3.png</imagen>
         <nombre>Beñat </nombre>
         <apellidos>Arnaiz </apellidos>
         <posicion>null</posicion>

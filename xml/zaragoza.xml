@@ -3,7 +3,7 @@
 <equipo nombre="ZARAGOZA" escudo="../img/zaragoza.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
 
     <componente tipo="entrenador">
-        <imagen>entrenador.png</imagen>
+        <imagen>e4.png</imagen>
         <nombre>Claudio </nombre>
         <apellidos>Ramos </apellidos>
         <posicion>null</posicion>

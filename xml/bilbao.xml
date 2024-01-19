@@ -3,7 +3,7 @@
 <equipo nombre="BILBAO" escudo="../img/bilbao.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
 
     <componente tipo="entrenador">
-        <imagen>entrenador.png</imagen>
+        <imagen>e1.png</imagen>
         <nombre>Garazi</nombre>
         <apellidos>Arrumbarrena</apellidos>
         <posicion>null</posicion>

@@ -3,7 +3,7 @@
 <equipo nombre="SALAMANCA" escudo="../img/salamanca.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
 
     <componente tipo="entrenador">
-        <imagen>entrenador.png</imagen>
+        <imagen>e5.png</imagen>
         <nombre>Enara </nombre>
         <apellidos>Robles </apellidos>
         <posicion>null</posicion>

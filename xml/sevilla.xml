@@ -3,9 +3,9 @@
 <equipo nombre="SEVILLA" escudo="../img/sevilla.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
 
     <componente tipo="entrenador">
-        <imagen>entrenador.png</imagen>
+        <imagen>e6.png</imagen>
         <nombre>Mariano </nombre>
-        <apellidos>Rajoy</apellidos>
+        <apellidos>Sanchez</apellidos>
         <posicion>null</posicion>
     </componente>
 
