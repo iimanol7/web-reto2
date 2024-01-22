@@ -18,6 +18,7 @@ if (document.getElementById('icon-tema')) {
 }
 
 /*--------HACEMOS VISIBLE EL MENU RESPONSIVE-------------*/
+//COMPROBAMOS QUE EL ELEMENTO ESTÉ EN ESA PÁGINA (si no da error, pues no la encuentra)
 if (document.getElementById('open-menu')) {
 
     const open = document.getElementById('open-menu')
@@ -107,6 +108,7 @@ if (document.getElementById('pass-checkbox')) {
 }
 
 /*-------------------------ABRIR FORMULARIO DE REGISRTO----------------------*/
+//COMPROBAMOS QUE EL ELEMENTO ESTÉ EN ESA PÁGINA (si no da error, pues no la encuentra)
 if (document.querySelector('#link-form')) {
 
     const linkForm = document.getElementById('link-form')

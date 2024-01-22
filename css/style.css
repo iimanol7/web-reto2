@@ -527,6 +527,7 @@ tr th {
     .container-slider {
         height: 500px;
     }
+
     .section-resumenes {
         display: flex;
         flex-direction: column;
@@ -571,7 +572,8 @@ tr th {
     .oculto {
         display: block;
     }
-    .noticias-inicio{
+
+    .noticias-inicio {
         display: flex;
         flex-direction: column;
     }
@@ -1208,42 +1210,45 @@ section.visible {
     object-fit: cover;
 }
 
-.container-equipos {
-    display: flex;
-    max-width: 650px;
-    width: 90%;
-    height: 430px;
-    margin: 50px auto;
+
+
+@media screen and (min-width:801px) {
+    .container-equipos {
+        display: flex;
+        max-width: 650px;
+        width: 90%;
+        height: 430px;
+        margin: 50px auto;
+    }
+
+    .equipo {
+        width: 0px;
+        height: 430px;
+        flex-grow: 1;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.6s;
+        position: relative;
+    }
+
+    .equipo h2 {
+        position: absolute;
+        top: -30px;
+        transition: 0.6s;
+    }
+
+    .equipo:hover {
+        width: 200px;
+    }
+
+    .equipo:hover h2 {
+        top: 25px;
+    }
+
 }
-
-.equipo {
-    width: 0px;
-    height: 430px;
-    flex-grow: 1;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.6s;
-    position: relative;
-}
-
-.equipo h2 {
-    position: absolute;
-    top: -30px;
-    transition: 0.6s;
-}
-
-.equipo:hover {
-    width: 200px;
-}
-
-.equipo:hover h2 {
-    top: 25px;
-}
-
-
 #equipo1 {
     background-color: red;
     color: white;
@@ -1277,11 +1282,19 @@ section.visible {
 
 
 @media screen and (max-width:800px) {
-    .equipo {
-        box-shadow: 0 0 0;
+    .container-equipos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+    .equipo{
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
 
-} 
 
 /* ------------------------------------ESTILO-EQUIPO.XSL------------------------------------------ */
 
