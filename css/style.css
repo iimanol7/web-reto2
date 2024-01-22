@@ -43,7 +43,6 @@ body.dark {
     --nav-text-color: black;
     --header-text-color: white;
     --section-bg-color: #2a2a2a;
-    transition: 0.25s;
 }
 
 header {
@@ -528,10 +527,6 @@ tr th {
     .container-slider {
         height: 500px;
     }
-
-    /* .noticia-pequeña1, .noticia-pequeña2{
-        display: none;
-    } */
     .section-resumenes {
         display: flex;
         flex-direction: column;
@@ -575,6 +570,10 @@ tr th {
 
     .oculto {
         display: block;
+    }
+    .noticias-inicio{
+        display: flex;
+        flex-direction: column;
     }
 }
 
