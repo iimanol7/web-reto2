@@ -554,7 +554,7 @@ tr th {
         padding: 0;
     }
 }
-
+/* Diseño para pantallas de menos de 850px */
 @media screen and (max-width:850px) {
     .container-slider {
         height: 400px;
@@ -578,7 +578,7 @@ tr th {
         flex-direction: column;
     }
 }
-
+/* Diseño para pantallas de menos de 650px */
 @media screen and (max-width:650px) {
     .container-slider {
         height: 300px;
@@ -820,10 +820,14 @@ tr th {
     overflow: auto;
 }
 
-.equipo-tabla {
+
+.equipo-tabla >div{
     display: flex;
     align-items: center;
+    width: 60%;
+    margin: auto;
 }
+
 
 .titulo-jornadas {
     text-align: center;
@@ -852,6 +856,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     border: 0.5px solid gray;
+    text-align: center;
 }
 
 table img {
@@ -862,6 +867,7 @@ table img {
 
 td {
     padding: 15px;
+
 }
 
 th {
@@ -1106,7 +1112,7 @@ th {
     .container-noticias {
         grid-template-areas:
             none;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 0.9fr));
     }
 }
 

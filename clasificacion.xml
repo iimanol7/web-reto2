@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml/clasificacion.xsl"?>
+<clasificacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xml/clasificacion.xsd">
+    <posicion num="1">
+        <equipo>
+            <escudo>bilbao.png</escudo>
+            <nombre>Bilbao</nombre>
+        </equipo>
+        <puntos>0</puntos>
+        <jugados>0</jugados>
+        <ganados>0</ganados>
+        <empatados>0</empatados>
+        <perdidos>0</perdidos>
+        <goles-favor>0</goles-favor>
+        <goles-contra>0</goles-contra>
+    </posicion>
+    <posicion num="2">
+        <equipo>
+            <escudo>barcelona.png</escudo>
+            <nombre>Barcelona</nombre>
+        </equipo>
+        <puntos>0</puntos>
+        <jugados>0</jugados>
+        <ganados>0</ganados>
+        <empatados>0</empatados>
+        <perdidos>0</perdidos>
+        <goles-favor>0</goles-favor>
+        <goles-contra>0</goles-contra>
+    </posicion>
+    <posicion num="3">
+        <equipo>
+            <escudo>madrid.png</escudo>
+            <nombre>Madrid</nombre>
+        </equipo>
+        <puntos>0</puntos>
+        <jugados>0</jugados>
+        <ganados>0</ganados>
+        <empatados>0</empatados>
+        <perdidos>0</perdidos>
+        <goles-favor>0</goles-favor>
+        <goles-contra>0</goles-contra>
+    </posicion>
+    <posicion num="4">
+        <equipo>
+            <escudo>zaragoza.png</escudo>
+            <nombre>Zaragoza</nombre>
+        </equipo>
+        <puntos>0</puntos>
+        <jugados>0</jugados>
+        <ganados>0</ganados>
+        <empatados>0</empatados>
+        <perdidos>0</perdidos>
+        <goles-favor>0</goles-favor>
+        <goles-contra>0</goles-contra>
+    </posicion>
+    <posicion num="5">
+        <equipo>
+            <escudo>salamanca.png</escudo>
+            <nombre>Salamanca</nombre>
+        </equipo>
+        <puntos>0</puntos>
+        <jugados>0</jugados>
+        <ganados>0</ganados>
+        <empatados>0</empatados>
+        <perdidos>0</perdidos>
+        <goles-favor>0</goles-favor>
+        <goles-contra>0</goles-contra>
+    </posicion>
+    <posicion num="6">
+        <equipo>
+            <escudo>sevilla.png</escudo>
+            <nombre>Sevilla</nombre>
+        </equipo>
+        <puntos>0</puntos>
+        <jugados>0</jugados>
+        <ganados>0</ganados>
+        <empatados>0</empatados>
+        <perdidos>0</perdidos>
+        <goles-favor>0</goles-favor>
+        <goles-contra>0</goles-contra>
+    </posicion>
+</clasificacion>
