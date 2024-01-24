@@ -25,9 +25,11 @@ if (document.getElementById('open-menu')) {
     const close = document.getElementById('close-menu')
     const nav = document.getElementById('nav')
 
+    //cuando hacemos click en el boton del menú
     open.addEventListener('click', () => {
         nav.classList.add('show')
     })
+    //cuando hacemos click en la "X"
     close.addEventListener('click', () => {
         nav.classList.remove('show')
     })
