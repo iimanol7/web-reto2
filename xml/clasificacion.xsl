@@ -10,6 +10,7 @@
       <script src="js/script.js" defer=""></script>
     </head>
     <body>
+    <!-- menú de navegación de la página web -->
       <header>
         <a href="index.html" class="logo">
           <img src="img/logo-liga.png" alt="RFEBM" width="120px"/>
@@ -19,7 +20,8 @@
         </div>
         <div class="poligon"></div>
         <nav id="nav">
-          <img src="img/close-menu.png" class="close-menu" id="close-menu"/>
+            <!-- botón de cerrar para el menú para móviles -->
+            <img src="img/close-menu.png" class="close-menu" id="close-menu"/>
           <ul class="menu-horizontal">
             <li>
               <a href="index.html">Inicio</a>
@@ -46,6 +48,7 @@
             </li>
           </ul>
         </nav>
+        <!-- botón de apertura del menú para móviles -->
         <img src="img/open-menu.png" class="open-menu" id="open-menu"/>
       </header>
 
@@ -59,6 +62,7 @@
     </section>
 
         <section class="container-tabla">
+          <!-- tabla de clasificación -->
           <table>
             <tr>
 
@@ -73,7 +77,9 @@
               <th>GC</th>
 
           </tr>
+          <!-- por cada elemento <posición> -->
           <xsl:for-each select="//posicion">
+          <!-- crear una fila con los siguientes valores: -->
             <tr>
                 <td><xsl:value-of select="@num"/></td>
                 <td class="equipo-tabla"> <div><img src="img/{equipo/escudo}"/> <xsl:value-of select="equipo/nombre"/> </div></td>
@@ -90,7 +96,7 @@
         </section>
 
       <!-- ______________________________________________________________________________ -->
-
+        <!-- botón para cambiar color de la página -->
         <section class="fix-btn">
           <img src="img/luna.png" alt="modo-oscuro" class="icon-tema" id="icon-tema"/>
         </section>

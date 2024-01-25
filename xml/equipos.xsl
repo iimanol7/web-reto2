@@ -10,6 +10,7 @@
         <script src="js/script.js" defer=""></script>
       </head>
       <body>
+    <!-- menú de navegación de la página web -->
         <header>
           <a href="index.html" class="logo">
             <img src="img/logo-liga.png" alt="RFEBM" width="120px"/>
@@ -19,6 +20,7 @@
           </div>
           <div class="poligon"></div>
           <nav id="nav">
+            <!-- botón de cerrar para el menú para móviles -->
             <img src="img/close-menu.png" class="close-menu" id="close-menu"/>
             <ul class="menu-horizontal">
               <li>
@@ -46,7 +48,8 @@
               </li>
             </ul>
           </nav>
-          <img src="img/open-menu.png" class="open-menu" id="open-menu"/>
+        <!-- botón de apertura del menú para móviles -->
+        <img src="img/open-menu.png" class="open-menu" id="open-menu"/>
         </header>
 
         <!-- ________________________________contenido-main_________________________________ -->
@@ -55,6 +58,7 @@
         <!-- ________________________________contenido-XML_________________________________ -->
 
           <section class="container-equipos">
+            <!-- por cada equipo... -->
             <xsl:for-each select="//equipo">
               <a class="equipo" id="{@id}" href="xml/{@ruta}">
                 <h2><xsl:value-of select="nombre"/></h2>
@@ -64,13 +68,13 @@
           </section>
 
         <!-- ______________________________________________________________________________ -->
-
+          <!-- botón para cambiar color de la página -->
           <section class="fix-btn">
             <img src="img/luna.png" alt="modo-oscuro" class="icon-tema" id="icon-tema"/>
           </section>
         </main>
 
-
+        <!-- pie de página -->
         <footer>
           <section class="top-footer">
             <div class="contacto">

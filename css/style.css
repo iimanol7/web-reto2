@@ -120,11 +120,11 @@ nav a::after {
     transition: 0.3s;
 }
 
-a.select::after {
+nav a:hover::after {
     width: 100%;
 }
 
-nav a:hover::after {
+a.select::after {
     width: 100%;
 }
 
@@ -1112,7 +1112,7 @@ th {
     .container-noticias {
         grid-template-areas:
             none;
-        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 0.9fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
     }
 }
 

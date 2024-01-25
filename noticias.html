@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- menú de navegación de la página web -->
     <header>
         <a href="index.html" class="logo">
             <img src="img/logo-liga.png" alt="RFEBM" width="120px">
@@ -20,6 +21,7 @@
         <div class="poligon"></div>
 
         <nav id="nav">
+            <!-- botón de cerrar para el menú para móviles -->
             <img src="img/close-menu.png" class="close-menu" id="close-menu">
             <ul class="menu-horizontal">
                 <li><a href="index.html">Inicio</a></li>
@@ -39,10 +41,11 @@
                 <li><a href="noticias.html" class="select">Noticias</a></li>
             </ul>
         </nav>
+        <!-- botón de apertura del menú para móviles -->
         <img src="img/open-menu.png" class="open-menu" id="open-menu">
     </header>
 
-    <!-- FORMULARIO OCULTO (EN UN PRINCIPIO) -->
+    <!-- FORMULARIO OCULTO (hasta que se hace click en el botón "registrarse") -->
     <section class="form-container" id="form-container">
         <form class="form" id="form">
             <img src="img/close-menu.png" class="close-form" id="close-form" width="30px">
@@ -66,18 +69,19 @@
             </div>
             <input type="submit" value="resgistrarse" class="submit" id="submit"></input>
             <div>
+                <!-- parrafo donde aparecerán los requisitos de validación del formulario -->
                 <p id="validacion"></p>
             </div>
         </form>
     </section>
-
+    <!-- Contenido de la página web -->
     <main class="noticias-main">
 
         <section class="ultima-hora">
             <div class="icono-noticia"></div>
             <h1>Última hora</h1>
         </section>
-
+        <!-- noticia grande -->
         <section class="noticia-main">
 
             <div class="titulo-noticia">
@@ -103,7 +107,7 @@
             </div>
         </section>
 
-
+        <!-- sección de noticias pequeñas -->
         <section class="container-noticias">
             <div class="noticia noticia1">
                 <div><img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/11/13/16683545557507.jpg">
@@ -201,17 +205,18 @@
                 </div>
             </div>
         </section>
-
+        <!-- botón para hacer visible el formulario -->
         <section class="link-formulario">
             <a href="#" id="link-form">REGISTRATE</a> para recibir las últimas noticias sobre tus equipos favoritos!
         </section>
+        <!-- botón para cambiar color de la página web -->
         <section class="fix-btn">
             <img src="img/luna.png" alt="modo-oscuro" class="icon-tema" id="icon-tema">
         </section>
     </main>
 
 
-
+    <!-- pie dde página -->
     <footer>
         <section class="top-footer">
 
