@@ -160,6 +160,7 @@ nav li {
     display: none;
 }
 
+/* ocultar menu y hacerlo desplegable */
 @media screen and (max-width:760px) {
     .poligon {
         display: none;
@@ -1238,6 +1239,7 @@ section.visible {
         align-items: center;
         transition: 0.6s;
         position: relative;
+        opacity: 0.8;
     }
 
     .equipo h2 {
@@ -1248,6 +1250,8 @@ section.visible {
 
     .equipo:hover {
         width: 200px;
+        opacity: 1;
+        filter: contrast(150%);
     }
 
     .equipo:hover h2 {
