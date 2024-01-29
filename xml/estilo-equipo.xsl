@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="../css/style.css"/>
       <title><xsl:value-of select="equipo/@nombre"/></title>
       <script src="../js/script.js" defer=""></script>
+      <link rel="shortcut icon" href="../img/logo-liga.png" type="image/x-icon"></link>
     </head>
     <body>
       <header>

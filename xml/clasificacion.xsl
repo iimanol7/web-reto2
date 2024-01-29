@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="css/style.css"/>
       <title>Clasificación</title>
       <script src="js/script.js" defer=""></script>
+      <link rel="shortcut icon" href="img/logo-liga.png" type="image/x-icon"></link>
     </head>
     <body>
     <!-- menú de navegación de la página web -->
