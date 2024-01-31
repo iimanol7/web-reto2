@@ -616,9 +616,14 @@ tr th {
     opacity: 0;
     background-color: var(--header-bg-color);
     padding: 20px;
-    transition: 0.5s;
+    transition: 0.1s;
 }
-
+.jornada h3{
+    margin-bottom: 10px;
+}
+.jornada img{
+    padding: 10px;
+}
 
 .ul-jornadas li:first-child {
     opacity: 1;
