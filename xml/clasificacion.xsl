@@ -49,6 +49,8 @@
       <li><a href="jornadas_temporada {//@temp}.xml">Jornadas</a></li>
       <li><a href="equipos_temporada {//@temp}.xml">Equipos</a></li>
      </nav>
+     
+     <h2>Temporada <xsl:value-of select="//@temp"/></h2>
 
         <section class="container-tabla">
           <!-- tabla de clasificación -->
