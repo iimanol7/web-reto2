@@ -5,16 +5,16 @@
     <head>
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="stylesheet" href="css/style.css"/>
+      <link rel="stylesheet" href="../css/style.css"/>
       <title>Clasificación</title>
-      <script src="js/script.js" defer=""></script>
-      <link rel="shortcut icon" href="img/logo-liga.png" type="image/x-icon"></link>
+      <script src="../js/script.js" defer=""></script>
+      <link rel="shortcut icon" href="../img/logo-liga.png" type="image/x-icon"></link>
     </head>
     <body>
     <!-- menú de navegación de la página web -->
       <header>
         <a href="index.html" class="logo">
-          <img src="img/logo-liga.png" alt="RFEBM" width="120px"/>
+          <img src="../img/logo-liga.png" alt="RFEBM" width="120px"/>
         </a>
         <div class="titulo">
           <h1>REAL FEDERACION ESPAÑOLA DE BALONMANO</h1>
@@ -22,35 +22,21 @@
         <div class="poligon"></div>
         <nav id="nav">
             <!-- botón de cerrar para el menú para móviles -->
-            <img src="img/close-menu.png" class="close-menu" id="close-menu"/>
+            <img src="../img/close-menu.png" class="close-menu" id="close-menu"/>
           <ul class="menu-horizontal">
             <li>
-              <a href="index.html">Inicio</a>
+              <a href="../index.html">Inicio</a>
             </li>
             <li>
-              <a href="equipos.xml" >Equipos</a>
-              <ul class="menu-vertical">
-                <li><a href="xml/bilbao.xml">Bilbao</a></li>
-                <li><a href="xml/barcelona.xml">Barcelona</a></li>
-                <li><a href="xml/madrid.xml">Madrid</a></li>
-                <li><a href="xml/zaragoza.xml">Zaragoza</a></li>
-                <li><a href="xml/salamanca.xml">Salamanca</a></li>
-                <li><a href="xml/sevilla.xml">Sevilla</a></li>
-              </ul>
+              <a href="../temporadas.xml">Temporadas</a>
             </li>
             <li>
-              <a href="calendario.html">Jornadas</a>
-            </li>
-            <li>
-              <a href="clasificacion.xml" class="select">Clasificacion</a>
-            </li>
-            <li>
-              <a href="noticias.html">Noticias</a>
+              <a href="../noticias.html">Noticias</a>
             </li>
           </ul>
         </nav>
         <!-- botón de apertura del menú para móviles -->
-        <img src="img/open-menu.png" class="open-menu" id="open-menu"/>
+        <img src="../img/open-menu.png" class="open-menu" id="open-menu"/>
       </header>
 
       <!-- ________________________________contenido-main_________________________________ -->
@@ -58,9 +44,11 @@
 
       <!-- ________________________________contenido-XML_________________________________ -->
 
-      <section class="container-cambiar-temporada">
-        <a href="anterior/clasificacion.html" class="cambiar-temporada">Ver temporada anterior</a>
-    </section>
+     <nav class="nav-clasi">
+      <li><a href="clasificacion_temporada {//@temp}.xml">Clasificacion</a></li>
+      <li><a href="jornadas_temporada {//@temp}.xml">Jornadas</a></li>
+      <li><a href="equipos_temporada {//@temp}.xml">Equipos</a></li>
+     </nav>
 
         <section class="container-tabla">
           <!-- tabla de clasificación -->
@@ -83,7 +71,7 @@
           <!-- crear una fila con los siguientes valores: -->
             <tr>
                 <td><xsl:value-of select="@num"/></td>
-                <td class="equipo-tabla"> <div><img src="img/{equipo/escudo}"/> <xsl:value-of select="equipo/nombre"/> </div></td>
+                <td class="equipo-tabla"> <div><img src="../img/{equipo/escudo}"/> <xsl:value-of select="equipo/nombre"/> </div></td>
                 <td><xsl:value-of select="puntos"/></td>
                 <td><xsl:value-of select="jugados"/></td>
                 <td><xsl:value-of select="ganados"/></td>
@@ -97,10 +85,7 @@
         </section>
 
       <!-- ______________________________________________________________________________ -->
-        <!-- botón para cambiar color de la página -->
-        <section class="fix-btn">
-          <img src="img/luna.png" alt="modo-oscuro" class="icon-tema" id="icon-tema"/>
-        </section>
+ 
       </main>
 
 
@@ -110,17 +95,17 @@
             <h3>CONTACTO</h3>
             <ul>
               <li>
-                <img src="img/icon-telefono.png" width="25px"/>+34 915 48 35 58
+                <img src="../img/icon-telefono.png" width="25px"/>+34 915 48 35 58
               </li>
               <li>
-                <img src="img/icon-fax.png" width="25px"/>+34 915 42 70 49
+                <img src="../img/icon-fax.png" width="25px"/>+34 915 42 70 49
               </li>
               <li>
-                <img src="img/icon-mail.png" width="25px"/>
+                <img src="../img/icon-mail.png" width="25px"/>
                 <a href="mailto:rfebm@rfebm.com">rfebm@rfebm.com</a>
               </li>
               <li>
-                <img src="img/icon-ubi.png" width="25px"/>Ornilla Doctor Kalea, 2, 48004 Bilbo, Bizkaia
+                <img src="../img/icon-ubi.png" width="25px"/>Ornilla Doctor Kalea, 2, 48004 Bilbo, Bizkaia
               </li>
             </ul>
           </div>
@@ -129,7 +114,7 @@
             <ul>
               <li>
                 <a href="https://www.instagram.com/rfebalonmano/?hl=es">
-                  <img src="img/icon-ig.png"
+                  <img src="../img/icon-ig.png"
                                     width="50px"/>
                   <p>@rfebalonmano</p>
                 </a>
@@ -137,13 +122,13 @@
               <li>
                 <a href="https://twitter.com/RFEBalonmano?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
                   <img
-                                    src="img/icon-twt.png" width="50px"/>
+                                    src="../img/icon-twt.png" width="50px"/>
                   <p>@RFEBalonmano</p>
                 </a>
               </li>
               <li>
                 <a href="https://www.youtube.com/@RFEBM">
-                  <img src="img/icon-yt.png" width="50px"/>
+                  <img src="../img/icon-yt.png" width="50px"/>
                   <p>@RFEBM</p>
                 </a>
               </li>
@@ -152,7 +137,7 @@
         </section>
         <section class="bottom-footer">
           <div class="copy-footer">
-            <img src="img/logo-liga.png" alt="RFEVB" width="50px"/> 
+            <img src="../img/logo-liga.png" alt="RFEVB" width="50px"/> 
             <p>Copyright RFEBM.</p>
           </div>
           <div class="info-footer">

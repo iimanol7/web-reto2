@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="xml/clasificacion.xsl"?>
-<clasificacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xml/clasificacion.xsd">
+<?xml-stylesheet type="text/xsl" href="clasificacion.xsl"?>
+<clasificacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="clasificacion.xsd" temp="1">
+    
     <posicion num="1">
         <equipo>
             <escudo>bilbao.png</escudo>
@@ -16,7 +17,7 @@
     </posicion>
     <posicion num="2">
         <equipo>
-            <escudo>barcelona.png</escudo>
+            <escudo>Barcelona.png</escudo>
             <nombre>Barcelona</nombre>
         </equipo>
         <puntos>0</puntos>

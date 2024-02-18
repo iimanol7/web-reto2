@@ -55,7 +55,7 @@
       <!-- ________________________________contenido-main_________________________________ -->
       <main class="equipo-main">
 
-       <a href="../equipos.xml" ><img src="../img/flecha-atras.png" alt="Volver" class="img-atras"/></a>
+       
 
         <section class="cabecera-equipo">
           <div class="cabecera-img" ><img src="{equipo/@escudo}" class="escudo-{equipo/@nombre}"/></div>

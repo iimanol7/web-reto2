@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="xml/equipos.xsl"?>
+<?xml-stylesheet type="text/xsl" href="equipos.xsl"?>
 <!--  -->
 <!-- <?xml-model href="xml/equipos.xsd"?> -->
 <!--  -->
-<equipos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xml/equipos.xsd">
+<equipos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xml/equipos.xsd">
 
     <equipo id="equipo1" ruta="bilbao.xml">
         <nombre>Bilbao</nombre>

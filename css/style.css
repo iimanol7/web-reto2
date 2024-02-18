@@ -813,6 +813,13 @@ tr th {
 
 /* --------------------------------------------------TEMPORADAS ANTERIORES------------------------------------------------------ */
 
+
+.nav-clasi{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding:  0 15%;
+}
 .main-anterior {
     display: flex;
     flex-direction: column;
@@ -1424,4 +1431,40 @@ section.visible {
 .condiciones h2,
 p {
     margin: 10px 0 10px 0;
+}
+
+/* -------------------TEMPORADAS----------------------- */
+.temporadas-main{
+    padding: 30px 15%;
+}
+.temporadas-main>h2{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.container-temporadas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.temporada{
+    text-decoration: none;
+    background-color: var(--section-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px gray;
+    text-align: center;
+    place-content: center;
+    width: 300px;
+    color: var(--body-text-color);
+    transition: .4s;
+    margin-bottom: 50px;
+}
+
+.temporada:hover{
+    transform: translateY(-15%);
+}
+
+.temporada:active{
+    transform: scale(0.5);
 }
