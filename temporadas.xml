@@ -2,13 +2,13 @@
 <?xml-model href="xml/temporadas.xsd"?> 
 <?xml-stylesheet type="text/xsl" href="xml/temporadas.xsl"?><temporadas>
     <temporada>
-        <nombre>Temporada1</nombre>
+        <nombre>Temporada 1</nombre>
     </temporada>
     <temporada>
-        <nombre>Temporada2</nombre>
+        <nombre>Temporada 2</nombre>
     </temporada>
     <temporada>
-        <nombre>Temporada3</nombre>
+        <nombre>Temporada 3</nombre>
     </temporada>
  
 </temporadas>
