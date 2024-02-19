@@ -1154,6 +1154,7 @@ section.visible {
     padding: 20px;
     max-width: 350px;
     position: relative;
+    overflow: hidden;
 }
 
 .form-inputs {
@@ -1207,8 +1208,11 @@ section.visible {
     right: 0;
     cursor: pointer;
     filter: drop-shadow(0 0 6px white);
+    transition:0.3s;
 }
-
+.close-form:hover{
+    background-color: lightgray;
+}
 .close-form:active {
     transform: scale(0.9);
 }
@@ -1462,7 +1466,7 @@ p {
 }
 
 .temporada:hover{
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 
 .temporada:active{

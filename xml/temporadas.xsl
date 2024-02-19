@@ -41,7 +41,7 @@
 
         <!-- ________________________________contenido-main_________________________________ -->
         <main class="temporadas-main">
-          <h2>SELECCIONE LA TERMPORADA QUE DESEA VER</h2>
+          <h2>Temporadas RFEBM</h2>
         <!-- ________________________________contenido-XML_________________________________ -->
 
           <section class="container-temporadas">
