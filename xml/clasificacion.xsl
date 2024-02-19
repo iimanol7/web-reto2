@@ -45,9 +45,9 @@
       <!-- ________________________________contenido-XML_________________________________ -->
 
      <nav class="nav-clasi">
-      <li><a href="clasificacion_temporada {//@temp}.xml">Clasificacion</a></li>
-      <li><a href="jornadas_temporada {//@temp}.xml">Jornadas</a></li>
-      <li><a href="equipos_temporada {//@temp}.xml">Equipos</a></li>
+      <li><a href="clasificacion_Temporada {//@temp}.xml">Clasificacion</a></li>
+      <li><a href="jornadas_Temporada {//@temp}.xml">Jornadas</a></li>
+      <li><a href="equipos_Temporada {//@temp}.xml">Equipos</a></li>
      </nav>
      
      <h2>Temporada <xsl:value-of select="//@temp"/></h2>
