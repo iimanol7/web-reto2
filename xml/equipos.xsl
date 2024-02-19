@@ -55,7 +55,7 @@
           <section class="container-equipos">
             <!-- por cada equipo... -->
             <xsl:for-each select="//equipo">
-              <a class="equipo" id="{@id}" href="{@ruta}">
+              <a class="equipo" id="{@id}" href="{nombre}.xml">
                 <h2><xsl:value-of select="nombre"/></h2>
                 <img src="../img/{escudo}" alt=""/>
               </a>
