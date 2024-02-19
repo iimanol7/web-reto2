@@ -659,6 +659,7 @@ tr th {
     border-radius: 10px;
     box-shadow: 0 0px 12px gray;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .jornadas-btn a {

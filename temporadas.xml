@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="xml/temporadas.xsd"?> 
-<?xml-stylesheet type="text/xsl" href="xml/temporadas.xsl"?><temporadas>
+<?xml-stylesheet type="text/xsl" href="xml/temporadas.xsl"?>
+<temporadas>
     <temporada>
         <nombre>Temporada 1</nombre>
     </temporada>

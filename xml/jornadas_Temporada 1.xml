@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="jornadas.xsl"?>
+<jornadas temp="1">
+    <jornada>
+        <partido>
+            <local>bilbao</local>
+            <resultado>0-0</resultado>
+            <visitante>barcelona</visitante>
+        </partido>
+        <partido>
+            <local>Madrid</local>
+            <resultado>0-0</resultado>
+            <visitante>Salamanca</visitante>
+        </partido>
+        <partido>
+            <local>Sevilla</local>
+            <resultado>0-0</resultado>
+            <visitante>zaragoza</visitante>
+        </partido>
+    </jornada>
+    <jornada>
+        <partido>
+            <local>Sevilla</local>
+            <resultado>0-0</resultado>
+            <visitante>barcelona</visitante>
+        </partido>
+        <partido>
+            <local>Salamanca</local>
+            <resultado>0-0</resultado>
+            <visitante>zaragoza</visitante>
+        </partido>
+        <partido>
+            <local>Sevilla</local>
+            <resultado>0-0</resultado>
+            <visitante>zaragoza</visitante>
+        </partido>
+    </jornada>
+</jornadas>
