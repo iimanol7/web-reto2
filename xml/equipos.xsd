@@ -15,7 +15,6 @@
         <xs:element name="escudo" type="xs:string"/>
       </xs:sequence>
       <xs:attribute name="id" type="xs:string" use="required"/>
-      <xs:attribute name="ruta" type="xs:string" use="required"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>
