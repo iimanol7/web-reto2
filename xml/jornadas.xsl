@@ -44,13 +44,13 @@
 
         <!-- ________________________________contenido-XML_________________________________ -->
 
-        <nav class="nav-clasi">
+        <ul class="nav-clasi">
           <li><a href="clasificacion_{//@temp}.xml">Clasificacion</a></li>
-          <li><a href="jornadas_{//@temp}.xml">Jornadas</a></li>
+          <li><a href="jornadas_{//@temp}.xml" class="select">Jornadas</a></li>
           <li><a href="equipos_{//@temp}.xml">Equipos</a></li>
-         </nav>
+        </ul>
 
-         <h2><xsl:value-of select="//@temp"/></h2>
+         <h2 class="nombreTemporada"><xsl:value-of select="//@temp"/></h2>
 
           <section class="container-jornadas">
             <!-- por cada partido... -->
@@ -63,12 +63,12 @@
                       <xsl:for-each select ="partido">
                       <div class="partido">
                         <img src="../img/{local}.png"
-                            width="100px"/>
+                            width="120px"/>
                         <div class="hora-partido">
                             <p><xsl:value-of select="resultado"/></p>
                         </div><img
                             src="../img/{visitante}.png"
-                            width="100px"/>
+                            width="120px"/>
                       </div>
                     </xsl:for-each>
                     </li>
@@ -78,23 +78,21 @@
           </section>
           <!-- botones para cambiar la jornada -->
           <section class="jornadas-btn" id="jornadas-btn">
-            <a class="a1"  href="#jornada1">1</a>
-            <a class="a2"  href="#jornada2">2</a>
-            <a class="a3"  href="#jornada3">3</a>
-            <a class="a4"  href="#jornada4">4</a>
-            <a class="a5"  href="#jornada5">5</a>
-            <a class="a6"  href="#jornada6">6</a>
-            <a class="a7 " href="#jornada7">7</a>
-            <a class="a8"  href="#jornada8">8</a>
-            <a class="a9"  href="#jornada9">9</a>
-            <a class="a10" href="#jornada10">10</a>
+            <a class="a a1"  href="#jornada1">1</a>
+            <a class="a a2"  href="#jornada2">2</a>
+            <a class="a a3"  href="#jornada3">3</a>
+            <a class="a a4"  href="#jornada4">4</a>
+            <a class="a a5"  href="#jornada5">5</a>
+            <a class="a a6"  href="#jornada6">6</a>
+            <a class="a a7 " href="#jornada7">7</a>
+            <a class="a a8"  href="#jornada8">8</a>
+            <a class="a a9"  href="#jornada9">9</a>
+            <a class="a a10" href="#jornada10">10</a>
         </section>
 
         <!-- ______________________________________________________________________________ -->
           <!-- botón para cambiar color de la página -->
-          <section class="fix-btn">
-            <img src="../img/luna.png" alt="modo-oscuro" class="icon-tema" id="icon-tema"/>
-          </section>
+          
         </main>
 
         <!-- pie de página -->

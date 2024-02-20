@@ -4,36 +4,53 @@
 <jornadas temp="Temporada 1">
     <jornada>
         <partido>
-            <local>bilbao</local>
-            <resultado>0-0</resultado>
-            <visitante>barcelona</visitante>
+            <local>Athletic</local>
+            <resultado>0 - 0</resultado>
+            <visitante>FCbarcelona</visitante>
         </partido>
         <partido>
-            <local>Madrid</local>
+            <local>Real Madrid</local>
             <resultado>0-0</resultado>
-            <visitante>Salamanca</visitante>
+            <visitante>Ciudad de Salamanca</visitante>
         </partido>
         <partido>
-            <local>Sevilla</local>
+            <local>Base Sevilla</local>
             <resultado>0-0</resultado>
-            <visitante>zaragoza</visitante>
+            <visitante>Real zaragoza</visitante>
         </partido>
     </jornada>
     <jornada>
         <partido>
-            <local>Sevilla</local>
+            <local>Real madrid</local>
             <resultado>0-0</resultado>
-            <visitante>barcelona</visitante>
+            <visitante>FCbarcelona</visitante>
         </partido>
         <partido>
-            <local>Salamanca</local>
+            <local>Ciudad de Salamanca</local>
             <resultado>0-0</resultado>
-            <visitante>zaragoza</visitante>
+            <visitante>Real zaragoza</visitante>
         </partido>
         <partido>
-            <local>Sevilla</local>
+            <local>base Sevilla</local>
             <resultado>0-0</resultado>
-            <visitante>zaragoza</visitante>
+            <visitante>athletic</visitante>
+        </partido>
+    </jornada>
+    <jornada>
+        <partido>
+            <local>Real madrid</local>
+            <resultado>0-0</resultado>
+            <visitante>FCbarcelona</visitante>
+        </partido>
+        <partido>
+            <local>Ciudad de Salamanca</local>
+            <resultado>0-0</resultado>
+            <visitante>Real zaragoza</visitante>
+        </partido>
+        <partido>
+            <local>base Sevilla</local>
+            <resultado>0-0</resultado>
+            <visitante>athletic</visitante>
         </partido>
     </jornada>
 </jornadas>

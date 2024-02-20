@@ -190,7 +190,7 @@ nav li {
         cursor: pointer;
     }
 
-    nav {
+    nav.nav-header {
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -213,7 +213,7 @@ nav li {
 
     nav.show {
         right: 0;
-    }
+    }   
 }
 
 @media screen and (max-width:600px) {
@@ -637,7 +637,7 @@ tr th {
 .partido {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -669,6 +669,7 @@ tr th {
     background-color: var(--header-text-color);
     border-radius: 35%;
     position: relative;
+    border: 1px solid var(--header-text-color);
 }
 
 .jornadas-btn .a1::before {
@@ -680,7 +681,7 @@ tr th {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .jornadas-btn .a2::before {
@@ -692,7 +693,7 @@ tr th {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .jornadas-btn .a3::before {
@@ -704,7 +705,7 @@ tr th {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .jornadas-btn .a4::before {
@@ -716,7 +717,7 @@ tr th {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .jornadas-btn .a5::before {
@@ -728,7 +729,7 @@ tr th {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .jornadas-btn .a6::before {
@@ -740,7 +741,7 @@ tr th {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .jornadas-btn .a7::before {
@@ -752,7 +753,7 @@ tr th {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .jornadas-btn .a8::before {
@@ -764,7 +765,7 @@ tr th {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .jornadas-btn .a9::before {
@@ -776,7 +777,7 @@ tr th {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .jornadas-btn .a10::before {
@@ -788,11 +789,20 @@ tr th {
     left: 0;
     right: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 57% 79%, 50% 100%, 44% 79%, 0 80%);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 }
 
 .jornadas-btn a:hover::before {
     top: -20px;
+}
+
+.jornadas-btn a.active{
+    color: var(--header-text-color);
+    background-color: var(--header-bg-color);
+}
+.jornadas-btn a.active::before {
+    top: -20px;
+    color: white;
 }
 
 @media screen and (max-width:530px) {
@@ -1474,4 +1484,36 @@ p {
 
 .temporada:active{
     transform: scale(0.5);
+}
+
+
+.nombreTemporada{
+    text-align: center;
+    margin-top: 20px;
+}
+.nav-clasi{
+    list-style: none;
+    background-color: var(--nav-bg-color);
+    padding: 12px 0;
+}
+
+.nav-clasi li a{
+    text-decoration: none;
+    color: var(--nav-text-color);
+    font-weight: bolder;
+}
+
+.nav-clasi li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: var(--nav-text-color);
+    transition: 0.2s;
+}
+.nav-clasi li a:hover::after{
+    width: 100%;
+}
+.nav-clasi li a.select::after {
+    width: 100%;
 }

@@ -44,13 +44,13 @@
 
       <!-- ________________________________contenido-XML_________________________________ -->
 
-     <nav class="nav-clasi">
-      <li><a href="clasificacion_{//@temp}.xml">Clasificacion</a></li>
+     <ul class="nav-clasi">
+      <li><a href="clasificacion_{//@temp}.xml" class="select">Clasificacion</a></li>
       <li><a href="jornadas_{//@temp}.xml">Jornadas</a></li>
       <li><a href="equipos_{//@temp}.xml">Equipos</a></li>
-     </nav>
+     </ul>
      
-     <h2><xsl:value-of select="//@temp"/></h2>
+     <h2 class="nombreTemporada"><xsl:value-of select="//@temp"/></h2>
 
         <section class="container-tabla">
           <!-- tabla de clasificación -->
