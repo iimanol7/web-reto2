@@ -28,21 +28,7 @@
               <a href="../index.html">Inicio</a>
             </li>
             <li>
-              <a href="../equipos.xml" >Equipos</a>
-              <ul class="menu-vertical">
-                <li><a href="bilbao.xml">Bilbao</a></li>
-                <li><a href="barcelona.xml">Barcelona</a></li>
-                <li><a href="madrid.xml">Madrid</a></li>
-                <li><a href="zaragoza.xml">Zaragoza</a></li>
-                <li><a href="salamanca.xml">Salamanca</a></li>
-                <li><a href="sevilla.xml">Sevilla</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="../calendario.html">Jornadas</a>
-            </li>
-            <li>
-              <a href="../clasificacion.xml">Clasificacion</a>
+              <a href="../temporadas.xml">Temporadas</a>
             </li>
             <li>
               <a href="../noticias.html">Noticias</a>

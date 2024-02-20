@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="estilo-equipo.xsl"?>
-<equipo nombre="SALAMANCA" escudo="../img/salamanca.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
+<equipo nombre="SALAMANCA" escudo="../img/Ciudad de Salamanca.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
 
     <componente tipo="entrenador">
         <imagen>e5.png</imagen>

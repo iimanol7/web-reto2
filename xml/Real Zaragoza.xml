@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="estilo-equipo.xsl"?>
-<equipo nombre="ZARAGOZA" escudo="../img/zaragoza.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
+<equipo nombre="ZARAGOZA" escudo="../img/Real Zaragoza.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validacion-equipo.xsd">
 
     <componente tipo="entrenador">
         <imagen>e4.png</imagen>
