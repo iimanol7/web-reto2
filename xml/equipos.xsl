@@ -45,12 +45,12 @@
         <!-- ________________________________contenido-XML_________________________________ -->
 
         <nav class="nav-clasi">
-          <li><a href="clasificacion_Temporada {//@temp}.xml">Clasificacion</a></li>
-          <li><a href="jornadas_Temporada {//@temp}.xml">Jornadas</a></li>
-          <li><a href="equipos_Temporada {//@temp}.xml">Equipos</a></li>
+          <li><a href="clasificacion_{//@temp}.xml">Clasificacion</a></li>
+          <li><a href="jornadas_{//@temp}.xml">Jornadas</a></li>
+          <li><a href="equipos_{//@temp}.xml">Equipos</a></li>
          </nav>
 
-         <h2>Temporada <xsl:value-of select="//@temp"/></h2>
+         <h2><xsl:value-of select="//@temp"/></h2>
 
           <section class="container-equipos">
             <!-- por cada equipo... -->

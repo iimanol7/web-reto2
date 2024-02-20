@@ -1260,8 +1260,9 @@ section.visible {
 
     .equipo h2 {
         position: absolute;
-        top: -30px;
+        top: -55px;
         transition: 0.6s;
+        font-size: 10px;
     }
 
     .equipo:hover {
@@ -1272,6 +1273,7 @@ section.visible {
 
     .equipo:hover h2 {
         top: 25px;
+        font-size: 21px;
     }
 
 }

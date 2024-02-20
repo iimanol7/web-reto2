@@ -3,29 +3,29 @@
 <!--  -->
 <!-- <?xml-model href="xml/equipos.xsd"?> -->
 <!--  -->
-<equipos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="equipos.xsd" temp="2">
+<equipos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="equipos.xsd" temp="Temporada 2">
 
-    <equipo id="equipo1" ruta="bilbao.xml">
+    <equipo id="equipo1" >
         <nombre>Bilbao</nombre>
         <escudo>bilbao.png</escudo>
     </equipo>
-    <equipo id="equipo2" ruta="barcelona.xml">
+    <equipo id="equipo2" >
         <nombre>Barcelona</nombre>
         <escudo>barcelona.png</escudo>
     </equipo>
-    <equipo id="equipo3" ruta="madrid.xml">
+    <equipo id="equipo3" >
         <nombre>Madrid</nombre>
         <escudo>madrid.png</escudo>
     </equipo>
-    <equipo id="equipo4" ruta="zaragoza.xml">
+    <equipo id="equipo4" >
         <nombre>Zaragoza</nombre>
         <escudo>zaragoza.png</escudo>
     </equipo>
-    <equipo id="equipo5" ruta="salamanca.xml">
+    <equipo id="equipo5" >
         <nombre>Salamanca</nombre>
         <escudo>salamanca.png</escudo>
     </equipo>
-    <equipo id="equipo6" ruta="sevilla.xml">
+    <equipo id="equipo6" >
         <nombre>Sevilla</nombre>
         <escudo>sevilla.png</escudo>
     </equipo>
