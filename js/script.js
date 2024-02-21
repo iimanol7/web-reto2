@@ -128,18 +128,18 @@ if (document.querySelector('#link-form')) {
 
 }
 
-//
-if (document.querySelector('.a')) {
 
+if (document.querySelector('.a')) {
+    //mantener el foco en el boton seleccionado
     const botones = document.querySelectorAll('.a');
 
     botones.forEach(boton =>{
         boton.addEventListener('click', ()=>{
              // Eliminar clase 'active' de todos los botones
-    botones.forEach(b => b.classList.remove('active'));
+        botones.forEach(boton => boton.classList.remove('active'));
     
-    // Agregar clase 'active' al botón pulsado
-    boton.classList.add('active');
+        // Agregar clase 'active' al botón pulsado
+        boton.classList.add('active');
         })
     })
 

@@ -52,30 +52,32 @@
 
          <h2 class="nombreTemporada"><xsl:value-of select="//@temp"/></h2>
 
-          <section class="container-jornadas">
-            <!-- por cada partido... -->
 
-              <section class="jornadas">
-                <ul class="ul-jornadas">
-                  <xsl:for-each select="//jornada">
-                  <xsl:variable name="numeroJornada" select="position()"/>
-                    <li class="jornada" id="jornada{$numeroJornada}">
-                      <xsl:for-each select ="partido">
-                      <div class="partido">
-                        <img src="../img/{local}.png"
-                            width="120px"/>
-                        <div class="hora-partido">
-                            <p><xsl:value-of select="resultado"/></p>
-                        </div><img
-                            src="../img/{visitante}.png"
-                            width="120px"/>
-                      </div>
+            <section class="container-jornadas">
+              <!-- por cada partido... -->
+  
+                <section class="jornadas">
+                  <ul class="ul-jornadas">
+                    <xsl:for-each select="//jornada">
+                    <xsl:variable name="numeroJornada" select="position()"/>
+                      <li class="jornada" id="jornada{$numeroJornada}">
+                        <xsl:for-each select ="partido">
+                        <div class="partido">
+                          <img src="../img/{local}.png"
+                              width="120px"/>
+                          <div class="hora-partido">
+                              <p><xsl:value-of select="resultado"/></p>
+                          </div><img
+                              src="../img/{visitante}.png"
+                              width="120px"/>
+                        </div>
+                      </xsl:for-each>
+                      </li>
                     </xsl:for-each>
-                    </li>
-                  </xsl:for-each>
-                </ul>
-              </section>     
-          </section>
+                  </ul>
+                </section>     
+            </section>    
+            
           <!-- botones para cambiar la jornada -->
           <section class="jornadas-btn" id="jornadas-btn">
             <a class="a a1"  href="#jornada1">1</a>

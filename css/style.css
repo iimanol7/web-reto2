@@ -641,6 +641,11 @@ tr th {
 
 }
 
+.e-local, .e-visitante{
+    display: flex;
+    align-items: center;
+}
+
 .hora-partido {
     display: flex;
     flex-direction: column;
