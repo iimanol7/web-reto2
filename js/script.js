@@ -74,20 +74,20 @@ if (document.getElementById('pass-checkbox')) {
         if (name.value.length <= 0 || surname.value.length <= 0) {
             error.innerHTML = "Los campos de Nombre y Apellido no pueden estar vacios. <br>"
             esCorrecto = false
-        }else if (!regexEmail.test(mail.value)) {
+        }if (!regexEmail.test(mail.value)) {
 
             //coMpruebo que el email esta correcto
             error.innerHTML += "El correo no es valido. <br>"
             esCorrecto = false
-        }else  if (pass.value.length < 6) {
+        }if (pass.value.length < 6) {
             //compruebo que la contraseña tenga mas de 6 caracteres
             error.innerHTML += "La contraseña debe contener al menos 6 caracteres. <br>"
             esCorrecto = false
-        }else if (!regexPass.test(pass.value)) {
+        }if (!regexPass.test(pass.value)) {
             //compruebo que la contraseña contenga un número y una mayúscula
             error.innerHTML += "la contraseña debe contener al menos una letra minúscula, una mayúscula y un número. <br>"
             esCorrecto = false
-        }else if (pass.value !== repeatPass.value) {
+        }if (pass.value !== repeatPass.value) {
             error.innerHTML += "Las contraseñas no coinciden. <br>"
             esCorrecto = false
         }
