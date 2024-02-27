@@ -126,7 +126,7 @@ if (document.querySelector('#link-form')) {
         form.classList.remove('visible')
     })
 
-}
+} 
 
 
 if (document.querySelector('.a')) {
